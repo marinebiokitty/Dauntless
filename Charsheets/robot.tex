@@ -1,0 +1,129 @@
+\documentclass[char]{airship}
+\begin{document}
+
+\name{\cRobot{}}
+
+\bigquote{``Life is pleasant. Death is peaceful. It's the transition that's troublesome.''}{-- Isaac Asimov}
+
+You remember everything that has happened to you. Your first memory is
+of darkness. You didn't know what it was then. You heard the sound of
+steam escaping, though you didn't know what that was either, a smell
+you would later realize was a combination of the smells of
+warm metal and human illness.
+
+The first thing you did, upon taking in this data, was to open what
+are known as eyelids. You were greeted with so much data! It was ever
+so much more interesting than darkness. You saw two faces: your mother
+and father. At the time, they were no more interesting than all the
+other new things you saw. They named you William and mother leaked
+water from her eyes.
+
+Mother was always wonderful to you. She taught you so very many
+things. Father stopped moving not long after you first woke up. Mother
+told you he had died, and that that was how humans shut down
+forever. She leaked lots of water from her eyes. She told you that was
+crying. She said it was because she was sad.
+
+You know what things happen around you, what humans do, but you never
+understand why. You ask, and then they tell you, and sometimes you
+understand, but when you think you understand something new, you are
+often wrong.
+
+One day you stopped being with Mother. You don't know why. It was nice
+with Mother, and you did not want to stop being with her. Mother told
+you she loved you and she had to put you away for awhile to keep you
+safe. She kissed you and turned you off. When you were turned on again
+strange people were looking at you. They gasped and one of them
+shrieked, someone yelled ``It's ali-'' and you were turned you off
+again. Next time you woke up your limbs were being restrained. You sat
+up, accidentally breaking the restraints. You heard gasps again, and
+something large grabbed you from behind and everything went dark yet
+again. It was all very confusing.
+
+Things like that kept happening to you until finally a man told you
+that he had bought you. He told you his name was \cBoddy{\intro} and
+that you were going to work on an airship. Your mother used to make
+airships before she made you. She was very, very good at it. 
+
+He took you to his ship, which is run by \cCaptain{\intro}. He is nice
+but you think he seems sad. It is hard to tell what people feel. 
+
+Now you spend most of your time now with \cCid{\intro}. She teaches
+you many things. Everyone else thinks she is a boy, and she told you
+can not tell anyone that she is actually a girl. You really do not
+understand, but she says it is important. When \cCid{} is not teaching
+you things, you shovel coal and do whatever the crew tells you to do.
+
+There are other people around the ship. You are trying so hard to
+understand them! \cNPCWhore{\intro} is very nice to you. She is here
+with a man, \cDealer{\intro}. He is also your friend and tells you
+about the world! You like having so many friends. \cNPCWhore{} gave
+you a very pretty ring to play with. You keep it with you all the time
+and play with it. You even wrote her a nice letter and put it in her
+room.
+
+\cThief{\intro} is the Captain's daughter and she is also nice. She
+comes down to see \cCid{} a lot. You hope she likes you. Her uncle is
+\cVicar{\uncle}. He's a vicar and he talks to you about religion and
+God. You really don't understand that. It is even more confusing than
+people, but he really likes to talk to you about it, so you stand and
+listen. You are good at this.
+
+You feel like you are different from the other people somehow. You
+want to be like them. You bought a book several hundred hours ago, and
+you will read it soon. It is called ``Miss Manners' Guide to Raising a
+Well-Mannered Young Gentleman''. Maybe if you read it, you can be a
+well-mannered young gentleman. You are not entirely clear what a
+well-mannered young gentleman is, but it sounds like a good
+thing. Maybe some of your friends can help you learn what it is. They
+all have so many different ideas, though, and you don't know who is
+right. You'll have to listen to them carefully.
+
+
+\begin{itemz}[Goals]
+  \item Be nice.
+  \item Help Cid keep the ship running.
+  \item Read the book and become a well-mannered young gentleman.
+\end{itemz}
+
+\begin{itemz}[Notes]
+  \item You are a clockwork metallic automaton who looks like a real boy. You do not bleed, although you look identical to a small blond boy.  Everyone around you expects you to be what you look like, and generally have no clue about your true nature.
+\end{itemz}
+
+
+%%%%%
+%% List contacts, using \contact{<char macro>}
+\begin{contacts}
+  \contact{\cRobot{}} This is you. You have met you. You try to be nice and fix things.
+  \contact{\cCid{}} A nice girl. She tells you to do things.
+  \contact{\cCaptain{}} A nice man. He captains the ship you work on.
+  \contact{\cBoddy{}} A nice man.
+  \contact{\cDealer{}} A nice man.
+  \contact{\cNPCWhore{}} A nice lady.
+  \contact{\cVicar{}} A nice priest man.
+  \contact{\cThief{}} A nice girl. She comes to see Sid.
+  \contact{\cCowboy{}} A nice man.
+\end{contacts}
+
+
+%%%%%
+%% \starttag{<tag>} <elements> \endtag 
+%% Valid <tag> values are blues, greens, abils, combat, mems, items,
+%% whites, notebooks, cash, signs, ids.  These each correspond to a
+%% type of macro defined in Lists/.
+%%
+%% By using \starttag, you can give this character <elements> of the
+%% type corresponding to <tag>.
+%%
+%% Multiple uses of the same <tag> will simply add together.
+\starttag{mems}
+  \memfold{Open at the start of game.}{A series of explosions rock the ship, and you are thrown to your knees. Uh-oh.}
+  \memfold{Open if you see badge \#532}{It's mother.}
+% bryce
+\endtag
+
+\starttag{abils}
+  \ability{Robotic Body}{Your CR is 1, except for the purposes of being {\bf Wounded}. Then your CR counts as 4. You may also ignore one bullet per hour. If you are ever {\bf Wounded}, you fall unconscious and can recover fully in five minutes. When your character falls down, make a ``clunk'' sound. If anybody examines your {\bf Wounded} body or attempts to perform {\bf First Aid} on you, tell them that your innards seem to be entirely mechanical. Note that you can still be hit with a {\bf Killing Blow}.}{...}
+\endtag
+
+\end{document}

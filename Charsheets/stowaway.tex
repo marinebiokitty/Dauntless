@@ -1,0 +1,89 @@
+%%%%%
+%%
+%% Character sheets live in this directory.  This file doubles as a
+%% latex'able example charsheet.
+%%
+%% Character macros (in ../Lists/char-LIST.tex, presumably) each
+%% have a file that lives here.  The argument to \name{...} probably
+%% should be the macro for the given character, which will generate
+%% the charsheet's name (and print out lists of the characters stuff
+%% at the end) as specified in char-LIST.tex.  However, you can also
+%% just use \name{Some Text} if you want.
+%%
+%%%%%
+
+\documentclass[char]{airship}
+\begin{document}
+
+\name{\cStowaway{}}
+
+
+\bigquote{``Use this macro for large quotes of prose and such.  It
+justifies everything like a paragraph, except with no
+indentation.''}{-- The Author}
+
+\cenquote{``This macro is good\\ For shorter quotes\\ Or things like
+song lyrics:\\ It centers.''}{-- The Author}
+
+
+\TODO{This is a test character sheet.}
+
+This is a test character sheet.  Your name is \me{}.  Your friends
+call you \me{\informal}, while others call you \me{\formal}.
+
+This is some text.  This is some text.  This is some text.  This is
+some text.  This is some text.  This is some text.  This is some text.
+This is some text.  This is some text.  This is some text.
+
+Your friend, \cNPC{\informal}, is a nice person, if a bit clueless.
+
+
+%%%%%
+%% The itemz environment is a list environment similar to itemize.
+%% The typesetting is very tight, and matches that used by the lists
+%% at the end of character sheets.  It takes an optional argument that
+%% acts as a title for the list.  The enum environment is a similar
+%% variation of the enumerate environment, and the desc environment is
+%% similar to description.
+\begin{itemz}[Goals]
+  \item Things to do
+  \item Governments to topple
+  \item Worlds to dominate
+\end{itemz}
+
+\begin{itemz}[Notes]
+  \item You were born in London.
+  \item You went to MIT, and never left.
+\end{itemz}
+
+
+%%%%%
+%% List contacts, using \contact{<char macro>}
+\begin{contacts}
+  \contact{\cNPC{}} A test contact.
+\end{contacts}
+
+
+%%%%%
+%% \starttag{<tag>} <elements> \endtag 
+%% Valid <tag> values are blues, greens, abils, combat, mems, items,
+%% whites, notebooks, cash, signs, ids.  These each correspond to a
+%% type of macro defined in Lists/.
+%%
+%% By using \starttag, you can give this character <elements> of the
+%% type corresponding to <tag>.
+%%
+%% Multiple uses of the same <tag> will simply add together.
+\starttag{mems}
+  \mTest{}
+  \memfold{``Rosebud''}{Rosebud!  That was the name of... the name
+  of... darn, you forget.}
+\endtag
+
+\starttag{abils}
+  \ability{Amazing Powers}{You can do strange and amazing things.}{I
+  do something strange and amazing.}
+\endtag
+
+
+\end{document}

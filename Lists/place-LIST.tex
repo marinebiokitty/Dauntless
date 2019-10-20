@@ -1,0 +1,164 @@
+%%%%%
+%%
+%% This file sets up the Place datatype and creates Place macros.
+%% Places correspond to general units of game that are not characters.
+%% Generally, game elements that do not come in some character's
+%% packet are owned by places.  A Place macro may contain zero or more
+%% of any kind of element (most likely Sign and Item macros).
+%%
+%% The simplest case is a single Place macro, \pWorld{}, which
+%% contains all miscellaneous game elements not owned by a character.
+%% However, Place macros are a good way to sort game area by general
+%% location or similar.  Place may also be used as a base for more
+%% complex and specific subtypes.
+%%
+%% Places do not necessarily correspond to only locations; you could
+%% set up a series of Place macros that each represent a time period
+%% in which certain elements are to be introduced into game.
+%%
+%%%%%
+
+\DECLARESUBTYPE{Place}{Owner}
+\PRESETS{Place}{
+  \FD\MYwhere	{} %% if a Place is a single identifiable location
+  \FD\MYwhen	{} %% if a Place is time-based
+  }
+\POSTSETS{Place}{
+  \edef\mylocation{\MYwhere}
+  }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NEW{Place}{\pTwo}{
+  \s\MYname	{Captain's Quarters}
+  \s\MYsigns	{\sCptQuarters{}\sBed{}\sDresser{}}
+  \s\MYitems	{\iSword{}\iOpium{}\iSixShooter{}\iCaptainOtherSafe{}}
+  }
+
+\NEW{Place}{\pOne}{
+  \s\MYname {Mary's and Judy's room}
+  \s\MYsigns {\sCptEntQuarters{}\sBed{}\sDresser{}}
+  \s\MYitems {}
+  }
+
+\NEW{Place}{\pThree}{
+  \s\MYname {Ballroom}
+  \s\MYsigns {\sBallroom{}\sPiano{}\sCeilingPanelOne{}\sCeilingPanelThree{}}
+  \s\MYitems {}
+  }
+
+\NEW{Place}{\pFour}{
+  \s\MYname {Lord and Lady Major}
+  \s\MYsigns {\sGuestOne{}\sBed{}\sDresser{}}
+  \s\MYitems {\iJackNecklace{}
+\iJackNecklaceAuth{}
+\iJackNecklaceCaseOne{}
+\iJackNecklaceCaseTwo{}
+\iJackNecklaceCaseThree{}
+\iJackNecklaceCaseFour{}}
+  }
+
+\NEW{Place}{\pFive}{
+  \s\MYname {Anderson}
+  \s\MYsigns {\sGuestTwo{}\sBed{}\sDresser{}}
+  \s\MYitems {}
+  }
+
+\NEW{Place}{\pSix}{
+  \s\MYname {Bryce and Ms. Bryce}
+  \s\MYsigns {\sGuestThree{}\sBed{}\sDresser{}\sGuestThreeViolence{}\sGuestThreeViolenceCleaned{}}
+  \s\MYitems {\iOpium{}}
+  }
+
+\NEW{Place}{\pSeven}{
+  \s\MYname {Reginald}
+  \s\MYsigns {\sGuestFour{}\sBed{}\sDresser{}\sCeilingPanelOne{}\sCeilingPanelTwo{}}
+  \s\MYitems {\iPlansAndTools{}\iPlansAndTools{}\iPlansAndTools{}}
+  }
+
+\NEW{Place}{\pEight}{
+  \s\MYname {Cole and Rousseau}
+  \s\MYsigns {\sGuestFive{}\sBed{}\sBed{}\sDresser{}}
+  \s\MYitems {}
+  }
+
+\NEW{Place}{\pNine}{
+  \s\MYname {Blackwell}
+  \s\MYsigns {\sGuestSix{}\sBed{}\sDresser{}\sDesk{}\sCeilingPanelOne{}\sCeilingPanelThree{}\sOpiumHoleThree{}\sOpiumHoleFour{}}
+  \s\MYitems {\iPlansAndTools{}\iPlansAndTools{}\iPlansAndTools{}\iHugeOpiumShipment{}\iOpium{}\iOpium{}\iOpium{}\iOpium{}\iOpium{}\iOpium{}\iOpium{}\iOpium{}\iOpium{}\iOpium{}\iOpium{}\iOpium{}}
+  }
+
+\NEW{Place}{\pTen}{
+  \s\MYname {Sidney and William}
+  \s\MYsigns {\sEngGuestOne{}}
+  \s\MYitems {\iPipe{}}
+  }
+
+\NEW{Place}{\pEleven}{
+  \s\MYname {The Stations}
+  \s\MYsigns {\sStationOneBroken{}\sStationOneFixed{}\sStationTwoBroken{}\sStationTwoFixed{}\sStationThreeBroken{}\sStationThreeFixed{}\sStationFourBroken{}\sStationFourFixed{}\sStationFiveBroken{}\sStationFiveFixed{}}
+  \s\MYitems {}
+  }
+
+\NEW{Place}{\pTwelve}{
+  \s\MYname{Storage One}
+  \s\MYsigns{\sSprintingSpot{}\sSprintingSpotDispenser{}}
+  \s\MYitems{\iHeatShield{}\iHeatShield{}\iHeatShield{}\iHeatShield{}\iHeatShield{}\iHeatShield{}\iHeatShield{}\iHeatShield{}\iHeatShield{}\iHeatShield{}}
+}
+
+\NEW{Place}{\pThirteen}{
+  \s\MYname{Engineering}
+  \s\MYsigns{\sHotRoom{}\sHotRoomDispenser{}\sHotRoomMary{}}
+  \s\MYitems{\iPipe{}\iPipe{}\iPipe{}\iPipe{}\iPipe{}\iPipe{}\iPipe{}\iPipe{}\iPipe{}\iPipe{}\iCaptainKey{}}
+}
+
+\NEW{Place}{\pFourteen}{
+  \s\MYname{Storage Two}
+  \s\MYsigns{\sRiggingDispenser{}\sToolStorage{}\sToolStorageNormal{}\sToolStorageWooden{}}
+  \s\MYitems{\iRiggingKit{}\iRiggingKit{}\iRiggingKit{}\iRiggingKit{}\iRiggingKit{}\iRiggingKit{}\iRiggingKit{}\iRiggingKit{}\iRiggingKit{}\iRiggingKit{}\iToolkit{}\iToolkit{}\iToolkit{}\iToolkit{}\iToolkit{}\iToolkit{}\iToolkit{}\iToolkit{}\iToolkit{}\iToolkit{}\iWoodenTools{}\iWoodenTools{}\iWoodenTools{}\iWoodenTools{}\iWoodenTools{}\iWoodenTools{}\iWoodenTools{}\iWoodenTools{}\iWoodenTools{}\iWoodenTools{}}
+}
+
+\NEW{Place}{\pFifteen}{
+  \s\MYname{Storage Three}
+  \s\MYsigns{\sStorageRoomOne{}\sMetalPile{}\sCanvasPile{}}
+  \s\MYitems{\iCanvasSheet{}\iCanvasSheet{}\iCanvasSheet{}\iCanvasSheet{}\iCanvasSheet{}\iCanvasSheet{}\iCanvasSheet{}\iCanvasSheet{}\iCanvasSheet{}\iCanvasSheet{}\iMetalSheet{}\iMetalSheet{}\iMetalSheet{}\iMetalSheet{}\iMetalSheet{}\iMetalSheet{}\iMetalSheet{}\iMetalSheet{}\iMetalSheet{}\iMetalSheet{}}
+}
+
+\NEW{Place}{\pSixteen}{
+  \s\MYname{Fireworks!}
+  \s\MYsigns{\sFireworksRoom{}\sFireworksStorage{}}
+  \s\MYitems{\iFireworks{}\iFireworks{}\iFireworks{}\iFireworks{}\iFireworks{}\iFireworks{}\iFireworks{}\iFireworks{}}
+}
+
+\NEW{Place}{\pSeventeen}{
+  \s\MYname{Storage Four}
+  \s\MYsigns{\sCowboyDispOne{}\sCowboyDispTwo{}}
+  \s\MYitems{\iPropaneTorch{}\iPropaneTorch{}\iSolderingIron{}\iSolderingIron{}\iSpoolCopper{}\iSpoolCopper{}\iStandardPiston{}\iStandardPiston{}}
+}
+
+\NEW{Place}{\pEighteen}{
+  \s\MYname{s3krit Opium Plot Place}
+  \s\MYsigns{\sOpiumHoleOne{}\sOpiumHoleTwo{}}
+  \s\MYitems{\iOpiumPlotNote{}}
+}
+
+\NEW{Place}{\pBomb}{
+  \s\MYname{Bomb}
+  \s\MYsigns{\sBomb{}}
+  \s\MYitems{}
+	
+}
+
+\NEW{Place}{\pCrawlspaces}{
+  \s\MYname{Crawlspaces}
+  \s\MYsigns{\sCrawlspaceAC{}
+\sCrawlspaceA{}
+\sCrawlspaceBC{}
+\sCrawlspaceB{}
+\sCrawlspaceGC{}
+\sCrawlspaceG{}
+\sCrawlspaceDC{}
+\sCrawlspaceD{}}
+  \s\MYitems{\iDeBeersStock{}\iDeBeersDiamonds{}\iFireworks{}\iFireworks{}\iFireworks{}\iFireworks{}\iPlansAndTools{}\iPlansAndTools{}\iPlansAndTools{}\iPlansAndTools{}}
+  }

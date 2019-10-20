@@ -1,0 +1,236 @@
+%%%%%
+%%
+%% This file sets up the Abil datatype and creates Abil macros.  These
+%% are for abilities that characters may have.
+%%
+%%%%%
+
+\DECLARESUBTYPE{Abil}{Element}
+\PRESETS{Abil}{
+  \F\MYtext	%% text of ability, read by user
+  \F\MYeffect	%% effect text of ability, read by recipient(s)
+  }
+
+
+%%%%%
+%% \ability{<name>}{<text>}{<effect>}
+%%
+%% \ability is a wrapper around \INSTANCE, useful for 1-shot abilities,
+%% etc.
+\newinstance{Abil}{\ability[3]}{
+  \s\MYname{#1}\s\MYtext{#2}\s\MYeffect{#3}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% These are the four abilities that Robot Boy can obtain with his plot
+\NEW{Abil}{\aRVicar}{
+  \s\MYname    {Apprentice to the Vicar}
+  \s\MYtext     {You may heal someone who is {\bf Wounded} once per half hour. You must use this ability as soon and as often as you can.}
+  \s\MYeffect   {``I'm going to be a vicar when I grow up!''}
+  }
+
+\NEW{Abil}{\aRDealer}{
+  \s\MYname    {Apprentice to Mister Bryce}
+  \s\MYtext     {You have gained the ability to pick locks. Spend a minute with both hands on a sign that is able to be picked, and write ``TAMPERED'' on the sign. Whatever the sign was representing is now ``open''.}
+  \s\MYeffect   {``I'm going to be a legitimate businessman when I grow up!''}
+  }
+
+\NEW{Abil}{\aRCid}{
+  \s\MYname    {Apprentice to Sidney}
+  \s\MYtext     {You can fix each airship station in half the time if working alone. Also, you can forego the use of any one item needed.}
+  \s\MYeffect   {``I'm going to be an engineer when I grow up!''}
+  }
+
+\NEW{Abil}{\aRCurie}{
+  \s\MYname    {Apprentice to Mother}
+  \s\MYtext     {When within line of sight of the character with badge number \#532, your CR is increased by one for the purposes of resisting attacks.}
+  \s\MYeffect   {``I'm going to be mother's helper!''}
+  }
+
+\NEW{Abil}{\aFirstAid}{
+  \s\MYname   {First Aid}
+  \s\MYtext   {You can heal people who are {\bf Wounded}. This takes five minutes.}
+  \s\MYeffect {I begin healing you. Pause your bleeding out timer. At the end of five minutes, you are no longer {\bf Wounded} and may act normally.}
+  }
+
+\NEW{Abil}{\aTest}{
+  \s\MYname	{Test Ability}
+  \s\MYtext	{You are a test.}
+  \s\MYeffect	{This is a Test.}
+  }
+
+\NEW{Abil}{\aTameWolf}{
+  \s\MYname	{Forest Melody}
+  \s\MYtext	{You start singing a quiet, melodic song.}
+  \s\MYeffect	{If you are wearing a red headband, you are no longer under the effects of it. Remove it, and follow the instructions on whatever ability card caused you to put it on.}
+  }
+
+\NEW{Abil}{\aPerform}{
+  \s\MYname	{Singing Performance}
+  \s\MYtext	{You may only use this ability once per game, and only during the third hour of game with a GM around. When you use it, open your {\bf SP Packet}.}
+  \s\MYeffect	{I begin to sing{\ldots}}
+  }
+
+\NEW{Abil}{\aVicarPsych}{
+  \s\MYname	{Psych Lim: Beast Within}
+  \s\MYtext	{When your Sin total reaches 4, open your W packet. Everytime your Sin is above 4, and rises, do the same.}
+  \s\MYeffect	{Something dark and tortured seems to cloud my eyes{\ldots}}
+  }
+
+\NEW{Abil}{\aPickLock}{
+  \s\MYname	{Pick Lock}
+  \s\MYtext	{You can open rudimentary locks at ease. To use this ability, place both your hands on the lock for one minute. You're not an expert thief, and it will be clear to anyone who examines the lock that it has been tampered with. Write "tampered with" on the lock after you open it.}
+  \s\MYeffect	{I pick this lock.}
+  }
+
+\NEW{Abil}{\aPickPocket}{
+  \s\MYname	{Pick Pocket}
+  \s\MYtext {You can pick pockets as a Stealth ability, as per the
+  rules.  You must make the symbol for 5 seconds.  If you succeed,
+  find a GM.  Give the GM a description of the type of item you want
+  to steal and the GM will take an item of that type from your victim
+  and give it to you.  If they have no items matching your
+  description, you get nothing. You may also use this ability to place
+  an item in someone's pocket.  In this case, give the item you want
+  to place to a GM.}
+  \s\MYeffect	{I can pick pockets.}
+  }
+
+\NEW{Abil}{\aSabotage}{
+  \s\MYname	{Airship Sabotage}
+  \s\MYtext	{You can break parts of the ship as detailed in your greensheet.}
+  \s\MYeffect	{I make short work of this ship.}
+  }
+
+\NEW{Abil}{\aVicarOne}{
+  \s\MYname	{Glory}
+  \s\MYtext	{You may spend five Grace points and open your W packet. However, you maintain control over your actions.}
+  \s\MYeffect	{???}
+  }
+
+\NEW{Abil}{\aRepair}{
+  \s\MYname	{Repair}
+  \s\MYtext	{You can repair parts of the airship as detailed in your greensheet, and perform other mundane repair tasks.}
+  \s\MYeffect	{I repair this.}
+  }
+
+\NEW{Abil}{\aTeachSingCurie}{
+  \s\MYname	{Singing Lessons}
+  \s\MYtext	{You can teach Mary Archer how to sing. If you spend two minutes with her in relatively uninterrupted conversation, tell her to add one to her $\beta$ score. Roleplay the lesson accordingly.}
+  \s\MYeffect	{Mary, I'm giving you a singing lesson. Add one to your $\beta$ score when we are done.}
+  }
+
+\NEW{Abil}{\aTeachSingWhore}{
+  \s\MYname	{Singing Lessons}
+  \s\MYtext	{You can teach Mary Archer how to sing. If you spend two minutes with her in relatively uninterrupted conversation, tell her to add one to her $\alpha$ score. Roleplay the lesson accordingly.}
+  \s\MYeffect	{Mary, I'm giving you a singing lesson. Add one to your $\alpha$ score when we are done.}
+  }
+
+\NEW{Abil}{\aAdvKnife}{
+  \s\MYname	{Advanced Knife Proficiency}
+  \s\MYtext {You are very skilled at fighting with a knife.  You get a
+  +1 to your {\bf CR} (for both attack and defense) whenever you are
+  fighting with any knife item.}
+  \s\MYeffect	{I am viciously good with a knife.}
+  }
+
+\NEW{Abil}{\aJackKnife}{
+  \s\MYname	{Whore Slayer}
+  \s\MYtext {You get a +1 to your {\bf CR} when using the {\bf Wound}
+  ability with any knife item.  If you are attacking somebody you
+  believe to be a whore, this bonus increases to +2.  Note that this
+  bonus only applies to making {\bf Wound} attacks.  Your {\bf CR} is
+  unchanged for all other types of attacks and for defending against
+  attacks.}
+  \s\MYeffect	{I am viciously good at gutting whores.}
+  }
+
+\NEW{Abil}{\aSpecial}{
+  \s\MYname	{Special Powers}
+  \s\MYtext	{You have special powers, as detailed in your \gTest{}
+		greensheet.}
+  \s\MYeffect	{I have special powers!}
+  \s\MYgreens	{\gTest{}}
+  \suite
+  }
+
+\NEW{Abil}{\aCripple}{
+  \s\MYname	{Psych Lim: Crippled}
+  \s\MYtext	{Unless you know otherwise, you must walk at a limp or stop-step,
+and your CR is reduced to 1, from its natural level of 3.}
+  \s\MYeffect	{My metal legs have gunshot wounds in them.}
+  }
+
+
+%% Basic DarkWater-style Martial Attack abilities
+
+
+%% Everyone has these 3
+\NEW{Abil}{\aAssist}{
+  \s\MYname	{Assist}
+  \s\MYtext	{You can assist someone else's attack.  You must be
+		within ZoC of both the attacker and target.  Within two
+		seconds of an attack, direct this at the attacker,
+		saying ``\MYname'' and your CR.}
+  \s\MYeffect	{I assist your attack.}
+  }
+
+\NEW{Abil}{\aKnockOut}{
+  \s\MYname	{Knock Out}
+  \s\MYtext	{You can knock someone out as an attack.  This requires
+		a {\bf Blunt} weapon.  Say ``\MYname'' and your CR.}
+  \s\MYeffect	{I knock you out.}
+  }
+
+\NEW{Abil}{\aWound}{
+  \s\MYname	{Wound}
+  \s\MYtext	{You can wound someone as an attack.  This requires an
+		{\bf Edged} weapon, such as a knife.  Say ``\MYname'' and
+		your CR.}
+  \s\MYeffect	{I wound you.}
+  }
+
+
+%% the \basecombat macro can be prepended to the Char abils list
+%% (in char-LIST.tex)
+\def\basecombat{\aKnockOut{}\aWound{}\aAssist{}}
+
+
+%% only some people have these
+\NEW{Abil}{\aDisarm}{
+  \s\MYname	{Disarm}
+  \s\MYtext	{You can disarm one item from someone as an attack.  Say
+		``\MYname'' and your CR.  Point at the item you want to
+		disarm.  If the attack works, they must drop that item.}
+  \s\MYeffect	{I disarm that item.}
+  }
+
+\NEW{Abil}{\aRestrain}{
+  \s\MYname	{Restrain}
+  \s\MYtext	{You can restrain someone as an attack.  Say ``\MYname''
+		and your CR.  You may freely drag, attack, or (if you have
+		a weapon) killing-blow them.  To do anything else, or if
+		your health state changes, incant ``release'' and let them
+		go.}
+  \s\MYeffect	{I restrain you.  You are restrained until I incant
+		``release.''}
+  }
+
+\NEW{Abil}{\aThrow}{
+  \s\MYname	{Throw}
+  \s\MYtext	{You can throw someone as an attack.  Say ``\MYname'' and
+		your CR.  Point in the direction you want to throw them.}
+  \s\MYeffect	{I throw you.  Go in the direction I point ten full steps
+		or until you hit a wall or similar.}
+  }
+
+\NEW{Abil}{\aBareHandedKnockOut}{
+  \s\MYname	{Bare-Handed Knock Out}
+  \s\MYtext	{You can knock someone out as an attack, using your bare
+		hands.  Say ``\aKnockOut{}'' and your CR.}
+  \s\MYeffect	{I knock you out with my bare hands.}
+  }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

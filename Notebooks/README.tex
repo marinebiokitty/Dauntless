@@ -1,0 +1,73 @@
+%%%%%
+%%
+%% Research Notebooks live in this directory.  This file doubles as a
+%% latex'able example notebook.
+%%
+%% Notebook macros (in ../Lists/notebook-LIST.tex, presumably) each
+%% have a file that lives here.  The argument to \startnotebook{...}
+%% probably should be the macro for the given whitesheet.  However,
+%% you can also just use \name{Some Text} if you want.
+%%
+%% Note that every \startnotebook command needs a matching
+%% \endnotebook command.  Also note that no ownership information
+%% appears on the notebook.
+%%
+%%%%%
+
+\documentclass[notebook]{airship}
+\begin{document}
+
+\startnotebook{\nTest{}}
+
+
+
+\begin{page}{first}
+
+Get together 3 people who know how to juggle.  Then get 9 juggling
+balls.  Have each juggler juggle three at once, such that all 9 are
+being juggled at the same time.
+
+If the group can go 1 minute or more without dropping a single ball,
+go to step \nbref{1min}.  If they can go for 5 minutes without dropping
+a single ball, go to step \nbref{good}.
+
+\end{page}
+
+
+
+\begin{page}{1min}
+
+blah you need to juggle better.
+
+\end{page}
+
+
+
+\begin{page}{nothing}
+
+blah
+
+\end{page}
+
+
+
+\begin{page}{good}
+
+blah not bad.  Continue for another 5 minutes, and you can go to step
+\nbref{last}.
+
+\end{page}
+
+
+
+\begin{page}{last}
+
+blah you win!  congratulations!
+
+\end{page}
+
+
+
+\endnotebook
+
+\end{document}

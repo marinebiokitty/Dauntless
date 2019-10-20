@@ -1,0 +1,44 @@
+Combat Mechanics: Dart guns only (no disc guns), Darkwater
+
+--------------------FIX ROBOT PLOT---------
+
+--------------------FIX COWBOY PLOT--------
+
+--------------------SHIP PLOT--------------
+players: Cid, Robot, Saboteur, Curie
+
+fix/sabotage ship:
+five locations/mechanics. 
+determination of winner: whoever has more stations fixed/broken wins.
+caveat: if *everything* is broken, ship crashed madly and all die.
+
+possible resources consumed:
+--limited items
+--time to run mechanic
+--unlimited items that take time to obtain
+--being alone
+
+stations - 
+1. envelope: tear envelope apart, put envelope back together. mechaniced by FF:HR style taped pieces of paper
+2.
+3.
+4.
+5.
+
+--------------------OPIUM PLOT-------------
+players: Blackwell, Dealer, Noble, Whore
+
+Dealer: wants to sell lots of opium
+--needs to keep opium deal hidden (win condition = nobody blabs and is left alive, captain doesn't toss it out of the windows)
+--has to find/get to opium (solution = in thief's room)
+--needs to find buyer / make the trade
+--smuggle opium past customs
+
+Noble: wants to buy the opium (--wants to lace french countryside with opium! (plot within the house of lords)
+--needs to keep opium hidden
+--needs to find seller / make the trade
+--smuggle opium past customs
+
+Whore:
+--confiscate opium
+--arrest (with proof) buyers/seller of opium

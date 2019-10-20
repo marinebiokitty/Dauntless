@@ -1,0 +1,488 @@
+%%%%%
+%%
+%% This file sets up the Sign datatype and creates Sign macros.  These
+%% are for signs that represent interesting parts of game area.
+%%
+%%%%%
+
+\DECLARESUBTYPE{Sign}{Element}
+\PRESETS{Sign}{
+  \FD\MYloc	{\mylocation} %% real-space location
+  \FD\MYtext	{} %% text of sign
+  }
+\POSTSETS{Sign}{
+  \edef\mylocation{\MYloc}
+  }
+\def\mylocation{}
+
+\DECLARESUBTYPE{SignMedium}{Sign}
+\DECLARESUBTYPE{SignSmall}{Sign}
+\DECLARESUBTYPE{SignTiny}{Sign}
+\DECLARESUBTYPE{SignDot}{Sign}
+\PRESETS{SignDot}{\s\MYtext{}}
+
+\DECLARESUBTYPE{Label}{Sign}
+\PRESETS{Label}{\s\MYloc{}}
+\DECLARESUBTYPE{LabelMedium}{Label}
+\DECLARESUBTYPE{LabelSmall}{Label}
+
+\DECLARESUBTYPE{SignStrip}{Sign}
+\DECLARESUBTYPE{LabelCover}{Label}
+\DECLARESUBTYPE{LabelPage}{Label}
+
+\DECLARESUBTYPE{EOG}{Sign}
+\PRESETS{EOG}{%
+  \s\MYname	{End Of Game}
+  \s\MYtext	{You may not pass through here.}
+  }
+
+
+%%%%%
+%% \signbig[<location>]{<name>}{<text>}
+%% \eog[<location>]
+%%
+%% \signmdeium[<location>]{<name>}{<text>}
+%% \signsmall[<location>]{<name>}{<text>}
+%% \signtiny[<location>]{<name>}{<text>}
+%% \signdot[<location>]{<name>}
+%%
+%% \labelbig{<name>}{<text>}
+%% \labelmedium{<name>}{<text>}
+%% \labelsmall{<name>}{<text>}
+%%
+%% \signstrip[<location>]{<name>}{<text>}
+%% \labelcover{<name>}{<text>}
+%% \labelpage{<name>}{<text>}
+\newinstance{Sign}{\signbig[3][\mylocation]}{
+  \s\MYloc{#1}\s\MYname{#2}\s\MYtext{#3}}
+\newinstance{EOG}{\eog[1][\mylocation]}{\s\MYloc{#1}}
+
+\newinstance{SignMedium}{\signmedium[3][\mylocation]}{
+  \s\MYloc{#1}\s\MYname{#2}\s\MYtext{#3}}
+\newinstance{SignSmall}{\signsmall[3][\mylocation]}{
+  \s\MYloc{#1}\s\MYname{#2}\s\MYtext{#3}}
+\newinstance{SignTiny}{\signtiny[3][\mylocation]}{
+  \s\MYloc{#1}\s\MYname{#2}\s\MYtext{#3}}
+\newinstance{SignDot}{\signdot[2][\mylocation]}{
+  \s\MYloc{#1}\s\MYname{#2}}
+
+\newinstance{Label}{\labelbig[2]}{
+  \s\MYname{#1}\s\MYtext{#2}}
+\newinstance{LabelMedium}{\labelmedium[2]}{
+  \s\MYname{#1}\s\MYtext{#2}}
+\newinstance{LabelSmall}{\labelsmall[2]}{
+  \s\MYname{#1}\s\MYtext{#2}}
+
+\newinstance{SignStrip}{\signstrip[3][\mylocation]}{
+  \s\MYloc{#1}\s\MYname{#2}\s\MYtext{#3}}
+\newinstance{LabelCover}{\labelcover[2]}{
+  \s\MYname{#1}\s\MYtext{#2}}
+\newinstance{LabelPage}{\labelpage[2]}{
+  \s\MYname{#1}\s\MYtext{#2}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NEW{Sign}{\sEnd}{
+  \s\MYname {End of Airship}
+  \s\MYloc {}
+  \s\MYtext {Gamespace does not exist directly behind this point.}
+}
+
+\NEW{Sign}{\sCptQuarters}{
+  \s\MYname     {a wealthy bedroom} 
+  \s\MYloc      {34-3}
+  \s\MYtext    {An engraved sign proclaims this room to be the {\bf Captain's Quarters}.}
+  }
+
+\NEW{Sign}{\sCptEntQuarters}{
+  \s\MYname	{a wealthy bedroom}
+  \s\MYloc	{34-3}
+  \s\MYtext	{An engraved sign proclaims this room to be the {\bf First Mate's Quarters}. A small simple cross hangs off the doorhandle.}
+  }
+
+\NEW{Sign}{\sBallroom}{
+  \s\MYname	{an opulent open room}
+  \s\MYloc	{34-3}
+  \s\MYtext	{An engraved sign proclaims this room to be the {\bf Ballroom}.}
+  }
+
+\NEW{Sign}{\sPiano}{
+  \s\MYname   {a grand piano}
+  \s\MYloc {34-3}
+  \s\MYtext  {Softly self-playing.}
+ }
+
+\NEW{Sign}{\sGuestOne}{
+  \s\MYname	{a First-Class bedroom}
+  \s\MYloc	{24-3}
+  \s\MYtext	{A placard inserted into slits in the door reads {\bf Lord and Lady David Lloyd Major}.}
+  }
+
+\NEW{Sign}{\sGuestTwo}{
+  \s\MYname	{a First-Class bedroom}
+  \s\MYloc	{24-3}
+  \s\MYtext	{A placard inserted into slits in the door reads {\bf \cCurie{\MYname{}}}.}
+  }
+
+\NEW{Sign}{\sGuestThree}{
+  \s\MYname	{a Second-Class bedroom}
+  \s\MYloc	{24-3}
+  \s\MYtext	{A placard inserted into slits in the door reads {\bf \cDealer{\MYname{}}} and {\bf \cNPCWhore{\MYname{}}}.}
+  }
+
+\NEW{SignMedium}{\sGuestThreeViolence}{
+  \s\MYname	{a scene of violence}
+  \s\MYloc	{24-3}
+  \s\MYtext	{The rug is disheveled, there are spatters of blood and flesh on the wall and floor, and fingernail marks in the furniture. If you spend three minutes cleaning up and hiding this mess, you may tear down the sign. Leave the sign under this one up.}
+  }
+
+\NEW{SignMedium}{\sGuestThreeViolenceCleaned}{
+  \s\MYname	{a scene of disorder}
+  \s\MYloc	{24-3}
+  \s\MYtext	{The rug is slightly torn and there are mild markings in the furniture.}
+  }
+
+\NEW{Sign}{\sGuestFour}{
+  \s\MYname	{a Second-Class bedroom}
+  \s\MYloc	{24-3}
+  \s\MYtext	{A placard inserted into slits in the door reads {\bf \cVicar{\MYname{}}}.}
+  }
+
+\NEW{Sign}{\sGuestFive}{
+  \s\MYname	{a Second-Class bedroom}
+  \s\MYloc	{24-3}
+  \s\MYtext	{A placard inserted into slits in the door reads {\bf \cCowboy{\MYname{}}}.}
+  }
+
+\NEW{Sign}{\sGuestSeven}{
+  \s\MYname	{a Second-Class bedroom}
+  \s\MYloc	{24-3}
+  \s\MYtext	{A placard inserted into slits in the door reads {\bf \cSaboteur{\MYname{}}}.}
+  }
+
+\NEW{Sign}{\sGuestSix}{
+  \s\MYname	{a First-Class bedroom}
+  \s\MYloc	{24-3}
+  \s\MYtext	{A placard inserted into slits in the door reads {\bf \cBoddy{\MYname{}}}.}
+  }
+
+\NEW{Sign}{\sDesk}{
+  \s\MYname    {a desk}
+  \s\MYloc     {24-3}
+  \s\MYtext    {This is a very messy desk.}
+  }
+
+\NEW{Sign}{\sEngGuestOne}{
+  \s\MYname	{a cramped bedroom smelling of coal}
+  \s\MYloc	{24-3}
+  \s\MYtext	{A placard inserted into slits in the door reads {\bf \cCid{\MYname{}}} and {\bf \cRobot{\MYname{}}}.}
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NEW{Sign}{\sStationOneFixed}{
+  \s\MYname	{Operational Envelope Tie}
+  \s\MYloc	{{\it Airship Station}}
+  \s\MYtext	{This device keeps the envelope tightly wrapped around the airship. If you have an {\bf Edged} weapon and spend two minutes slashing it to ribbons, switch this sign with the one under it.}
+  }
+
+\NEW{Sign}{\sStationOneBroken}{
+  \s\MYname	{Dismantled Envelope Tie}
+  \s\MYloc	{{\it Airship Station}}
+  \s\MYtext	{This device is supposed to keep the envelope tightly wrapped around the airship. However, it has been sabotaged. The envelope lurches wildly and threatens to fly off is not fixed. If you have a {\bf Canvas Sheet} and a {\bf Rigging Kit}, you may expend it and two minutes to repair the tears in this station unless you know otherwise. If you do fix it, switch this sign with the one under it.}
+  }
+
+\NEW{Sign}{\sStationTwoFixed}{
+  \s\MYname	{Operational Steering Wheel}
+  \s\MYloc	{{\it Airship Station}}
+  \s\MYtext	{This device keeps the airship going straight on course. You may not interact with it unless you know otherwise. If you manage to sabotage it, switch this sign with the one under it.}
+  }
+
+\NEW{Sign}{\sStationTwoBroken}{
+  \s\MYname	{Jury-rigged Steering Wheel}
+  \s\MYloc	{{\it Airship Station}}
+  \s\MYtext	{This device is supposed to keep the airship straight on course. However, it has been jury-rigged into spinning wildly in one direction, throwing splinters of wood everywhere when it crashes to a stop and spins madly the other way. You may not fix this station unless you know otherwise. If you do fix it, switch this sign with the one under it.}
+  }
+
+
+\NEW{Sign}{\sStationThreeFixed}{
+  \s\MYname	{Operational Boiler}
+  \s\MYloc	{{\it Airship Station}}
+  \s\MYtext	{This device is heated by fire from the coal room and holds the water that boils off and drives the primary airship engine. You may not interact with this station unless you know otherwise. If you manage to sabotage it, switch this sign with the one under it.}
+  }
+
+
+\NEW{Sign}{\sStationThreeBroken}{
+  \s\MYname	{Unstable Boiler}
+  \s\MYloc	{{\it Airship Station}}
+  \s\MYtext	{This device is supposed to be heated by fire from the coal room and hols the water that boils off and drives the primary airship engine. However, it is currently in pieces, spewing boiling water at everything, and causing moderate mechanical failures all over the ship. You may not fix this station unless you know otherwise. If you do fix it, switch this sign with the one under it.}
+  }
+
+\NEW{Sign}{\sStationFourFixed}{
+  \s\MYname	{Operational Engine}
+  \s\MYloc	{{\it Airship Station}}
+  \s\MYtext	{This device powers the rudder of the airship, allowing the captain to control its speed and direction.  You may not interact with this station unless you know otherwise. If you manage to sabotage it, switch this sign with the one under it.}
+  }
+
+\NEW{Sign}{\sStationFourBroken}{
+  \s\MYname	{Sabotaged Engine}
+  \s\MYloc	{{\it Airship Station}}
+  \s\MYtext	{This device is supposed to power the rudder of the airship, allowing the captain to control its speed and direction. However, it's been stabbed, beaten and bent completely out of recognition, threatening to send to airship careening out of control. You may not interact with this station unless you know otherwise. If you manage to fix it, switch this sign with the one under it.}
+  }
+
+
+\NEW{Sign}{\sStationFiveFixed}{
+  \s\MYname	{Operational Repulsorlift Stabilizer}
+  \s\MYloc	{{\it Airship Station}}
+  \s\MYtext	{This device regulates the altitude of the airship. You may not interact with this station unless you know otherwise. If you manage to sabotage it, switch this sign with the one under it.}
+  }
+
+
+\NEW{Sign}{\sStationFiveBroken}{
+  \s\MYname	{Sabotaged Repulsorlift Stabilizer}
+  \s\MYloc	{{\it Airship Station}}
+  \s\MYtext	{This device is supposed to regulate the altitute of the airship. However, it has been horribly mangled, threatening to plummet the airship into the ground at any moment. You may not interact with station unless you know otherwise. If you manage to fix it, switch this sign with the one under it.}
+  }
+
+
+%% Rigging Kit, Lead Pipe, Heat Shield
+
+\NEW{Sign}{\sSprintingSpot}{
+  \s\MYname	{a long exposed hallway}
+  \s\MYloc	{36-3}
+  \s\MYtext	{This is a long service corridor, part of which is exposed to the outside. The length of the corridor is represented by the line of tape next to this sign. To cross it, you must sprint past howling winds. If you do so, step across the line to other side. You become {\bf Winded}: for the next two minutes, you can only walk toe-heel and your CR is lowered by one.}
+  }
+
+\NEW{Sign}{\sSprintingSpotDispenser}{
+  \s\MYname	{deep storage}
+  \s\MYloc	{36-3}
+  \s\MYtext	{This is a seldom used storage room, filled with cobwebs and mold. Unusual items used for airship maintenance abound. You can search around for a minute and pull a random item out of the envelope. The supply of whatever it is this room contains is essentially inexhaustible: if the envelope is empty, see a GM.}
+  }
+
+\NEW{Sign}{\sHotRoomDispenser}{
+  \s\MYname	{a pile of mechanical parts}
+  \s\MYloc	{36-3}
+  \s\MYtext	{You can dig a {\bf Lead Pipe} out from the pile. If you spend a minute searching,  retrieve one from the attached envelope. The supply is essentially inexhaustible: if the envelope is empty, see a GM.}
+  }
+
+\NEW{Sign}{\sHotRoom}{
+  \s\MYname	{a steam filled mechanical room}
+  \s\MYloc	{36-3}
+  \s\MYtext	{This room is too hot for normal human inhabitation. If you spend more than a minute in this room, then you become {\bf Winded} when you leave: for the next two minutes, you can only walk heel-toe and your CR is lowered by one.}
+  }
+
+% This is the sign behind which we tape the Captain's Key that fell out of Mary's pocket
+
+\NEW{SignMedium}{\sHotRoomMary}{
+  \s\MYname     {a dusty spot behind some pipes}
+  \s\MYloc      {36-3}
+  \s\MYtext     {You may not interact with this sign unless you know otherwise. If you have a {\bf DS Packet}, you may open it now.}
+  }
+
+\NEW{Sign}{\sRiggingDispenser}{
+  \s\MYname	{Rigging Stack}
+  \s\MYloc	{34-3}
+  \s\MYtext	{This is a tall stack of {\bf Rigging Kits}. You may simply take one from the envelope underneath this sign.}
+  }
+
+\NEW{Sign}{\sToolStorage}{
+  \s\MYname	{an open storage space}
+  \s\MYloc	{38-3}
+  \s\MYtext	{This is a closet full of racks and racks of tools.}
+  }
+
+\NEW{Sign}{\sToolStorageNormal}{
+  \s\MYname	{a full rack of boxes}
+  \s\MYloc	{38-3}
+  \s\MYtext	{There are {\bf Toolkits} here. If you spend a minute searching, you can retrieve one from the attached envelope. The supply is essentially inexhaustible: if the envelope is empty, see a GM.}
+  }
+
+\NEW{Sign}{\sToolStorageWooden}{
+  \s\MYname	{a sparser rack of boxes}
+  \s\MYloc	{38-3}
+  \s\MYtext	{There are {\bf Wooden Tools} here, but they are harder to find. If you spend two minutes searching, you can retrieve one from the attached envelope. The supply is essentially inexhaustible: if the envelope is empty, see a GM.}
+  }
+
+\NEW{Sign}{\sStorageRoomOne}{
+  \s\MYname	{a storage room left unlocked}
+  \s\MYloc	{24-3}
+  \s\MYtext	{The lock seems to be defective. This room is full with piles upon piles of metal and burlap.}
+  }
+
+\NEW{Sign}{\sMetalPile}{
+  \s\MYname	{a pile of metal}
+  \s\MYloc	{24-3}
+  \s\MYtext	{If you spend one minute searching through this collection, you can remove one of the {\bf Metal Sheets} from the attached envelope. The supply is essentially inexhaustible: if the envelope is empty, see a GM.}
+  }
+
+\NEW{Sign}{\sCanvasPile}{
+  \s\MYname	{a pile of burlap}
+  \s\MYloc	{24-3}
+  \s\MYtext	{If you spend one minute searching through this collection, you can remove one of the {\bf Canvas Sheets} from the attached envelope. The supply is essentially inexhaustible: if the envelope is empty, see a GM.}
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Other plot items.
+
+\NEW{Sign}{\sFireworksRoom}{
+  \s\MYname	{a heavily armored room}
+  \s\MYloc	{38-3}
+  \s\MYtext	{A metal sign on this door proclaims it to be the 'Fireworks Room'. The entire area smells like gunpowder. You can break into the room behind this door by attacking it ten times with a {\it Lead Pipe}. If you do this, write something appropriately descriptive on the door's sign.}
+  }
+
+\NEW{Sign}{\sFireworksStorage}{
+  \s\MYname	{a very complex series of locked boxes, pipes, safety equipment and fireworks}
+  \s\MYloc	{38-3}
+  \s\MYtext	{You may attempt to search this area for anything useful. If you do, place both hands on the sign for three minutes. At the end of the three minutes, you may take one item at random from the packet attached below.}
+  }
+
+\NEW{Sign}{\sCeilingPanelOne}{
+  \s\MYname	{a ceiling panel}
+  \s\MYloc	{24-3}
+  \s\MYtext	{A small metal door covers the ceiling. You can break into this panel by standing on a piece of furniture and attacking it ten times with a weapon, or by picking the lock. If you do this, exchange this sign with the one underneath.}
+  }
+
+\NEW{Sign}{\sCeilingPanelTwo}{
+  \s\MYname	{an open ceiling panel}
+  \s\MYloc	{24-3}
+  \s\MYtext	{The inside of this panel seems to be filled with papers, fireworks, construction tools and a bizarre variety of other things. You may attempt to search around for something useful by placing both of your hands on this sign for three minutes. At the end of this time, you may take on item at random from the packet attached below.}
+  }
+
+\NEW{Sign}{\sCeilingPanelThree}{
+  \s\MYname	{an open ceiling panel}
+  \s\MYloc	{24-3}
+  \s\MYtext	{The space behind this ceiling panel is completely bare. It leads off down into the bowels of the ship{\ldots}. The space is too cramped for human movement{\ldots}...}
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\NEW{Sign}{\sOpiumFinallyOne}{
+%  \s\MYname     {a bizzare broken contraption}
+%  \s\MYloc      {Item \#922}
+ % \s\MYtext     {This is a very strange gadget. You've never quite seen anything like it. It looks broken, but if you study it for three minutes, you can read the greensheet tucked inside the envelope attached to this. You may not interact with this sign unless you know otherwise.}
+ % }
+
+%\NEW{Sign}{\sOpiumFinallyTwo}{
+%  \s\MYname     {a bizzare, operation contraption}
+%  \s\MYloc      {!!!}
+%  \s\MYtext     {This is a very strange gadget. You've never quite seen anything like it. It seems to be working. If you have an item numbered \#829, \#830, \#831 or \#832, you may tear up such an item and look inside the corresponding envelope.}
+%  }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NEW{Sign}{\sCrawlspaceAC}{
+  \s\MYname    {a closed utility panel}
+  \s\MYloc     {38-3 - Crawlspace Alpha - Closed}
+  \s\MYtext    {\begin{itemize}\item It seems that the explosions at the beginning of the night have made blown open parts of the wall here. \item A sheet of metal has been screwed over this access panel. \item If you have a {\bf Toolkit}, you may spend one minute tinkering with this sign. If you do this, take the {\bf Metal Sheet} item card attached to this sign, and then switch this sign with the one directly behind it.\end{itemize}
+}
+  }
+
+
+
+\NEW{Sign}{\sCrawlspaceA}{
+  \s\MYname    {an open crawlspace}
+  \s\MYloc     {38-3 - Crawlspace Alpha - Open}
+  \s\MYtext    {\begin{itemize}\item It seems that the explosions at the beginning of the night have made blown open parts of the wall here.\item This is an open access panel that leads into the guts of the ship. \item If you have a $\phi$ stat of two, you may freely put (but not take) non-bulky items inside the item envelope attached to this sign. \item You may look at the greensheet next to this sign to read about how to interact with it. \item If you have a {\bf Toolkit} and a {\bf Metal Sheet}, you may spend one minute tinkering with this sign. If you do this, switch this sign with the one directly behind it, and attach the {\bf Metal Sheet} to the front of the new sign.\end{itemize}}
+  }
+
+\NEW{Sign}{\sCrawlspaceBC}{
+  \s\MYname    {a closed utility panel}
+  \s\MYloc     {36-3 - Crawlspace Beta - Closed}
+  \s\MYtext    {\begin{itemize}\item It seems that the explosions at the beginning of the night have made blown open parts of the wall here.\item A sheet of metal has been screwed over this access panel. \item If you have a {\bf Toolkit}, you may spend one minute tinkering with this sign. If you do this, take the {\bf Metal Sheet} item card attached to this sign, and then switch this sign with the one directly behind it.\end{itemize}
+}
+  }
+
+\NEW{Sign}{\sCrawlspaceB}{
+  \s\MYname    {an open crawlspace}
+  \s\MYloc     {36-3 - Crawlspace Beta - Open}
+  \s\MYtext    {\begin{itemize}\item It seems that the explosions at the beginning of the night have made blown open parts of the wall here.\item This is an open access panel that leads into the guts of the ship. \item If you have a $\phi$ stat of two, you may freely put (but not take) non-bulky items inside the item envelope attached to this sign. \item You may look at the greensheet next to this sign to read about how to interact with it. \item If you have a {\bf Toolkit} and a {\bf Metal Sheet}, you may spend one minute tinkering with this sign. If you do this, switch this sign with the one directly behind it, and attach the {\bf Metal Sheet} to the front of the new sign.\end{itemize}}
+  }
+
+\NEW{Sign}{\sCrawlspaceGC}{
+  \s\MYname    {a closed utility panel}
+  \s\MYloc     {26-3 - Crawlspace Gamma - Closed}
+  \s\MYtext    {\begin{itemize}\item It seems that the explosions at the beginning of the night have made blown open parts of the wall here.\item A sheet of metal has been screwed over this access panel. \item If you have a {\bf Toolkit}, you may spend one minute tinkering with this sign. If you do this, take the {\bf Metal Sheet} item card attached to this sign, and then switch this sign with the one directly behind it.\end{itemize}
+}
+  }
+
+\NEW{Sign}{\sCrawlspaceG}{
+  \s\MYname    {an open crawlspace}
+  \s\MYloc     {26-3 - Crawlspace Gamma - Open}
+  \s\MYtext    {\begin{itemize}\item It seems that the explosions at the beginning of the night have made blown open parts of the wall here.\item This is an open access panel that leads into the guts of the ship. \item If you have a $\phi$ stat of two, you may freely put (but not take) non-bulky items inside the item envelope attached to this sign. \item You may look at the greensheet next to this sign to read about how to interact with it. \item If you have a {\bf Toolkit} and a {\bf Metal Sheet}, you may spend one minute tinkering with this sign. If you do this, switch this sign with the one directly behind it, and attach the {\bf Metal Sheet} to the front of the new sign.\end{itemize}}
+  }
+
+\NEW{Sign}{\sCrawlspaceDC}{
+  \s\MYname    {a closed utility panel}
+  \s\MYloc     {24-3 - Crawlspace Delta - Closed}
+  \s\MYtext    {\begin{itemize}\item It seems that the explosions at the beginning of the night have made blown open parts of the wall here.\item A sheet of metal has been screwed over this access panel. \item If you have a {\bf Toolkit}, you may spend one minute tinkering with this sign. If you do this, take the {\bf Metal Sheet} item card attached to this sign, and then switch this sign with the one directly behind it.\end{itemize}
+}
+  }
+
+\NEW{Sign}{\sCrawlspaceD}{
+  \s\MYname    {an open crawlspace}
+  \s\MYloc     {24-3 - Crawlspace Delta - Open}
+  \s\MYtext    {\begin{itemize}\item It seems that the explosions at the beginning of the night have made blown open parts of the wall here.\item This is an open access panel that leads into the guts of the ship. \item If you have a $\phi$ stat of two, you may freely put (but not take) non-bulky items inside the item envelope attached to this sign. \item You may look at the greensheet next to this sign to read about how to interact with it. \item If you have a {\bf Toolkit} and a {\bf Metal Sheet}, you may spend one minute tinkering with this sign. If you do this, switch this sign with the one directly behind it, and attach the {\bf Metal Sheet} to the front of the new sign.\end{itemize}}
+  }
+
+\NEW{SignMedium}{\sBed}{
+  \s\MYname    {a bed}
+  \s\MYloc     {24-3}
+  \s\MYtext    {This is a raised, queen-sized oak bed. It looks like it was just built.}
+  }
+
+\NEW{SignMedium}{\sDresser}{
+  \s\MYname    {a dresser}
+  \s\MYloc     {24-3}
+  \s\MYtext    {This is an ornate wooden dresser. It probably stores clothes.}
+  }
+
+\NEW{Sign}{\sCowboyDispOne}{
+  \s\MYname {miscellaneous storage}
+  \s\MYloc  {24-3}
+  \s\MYtext {This corner of the room holds an eclectic collection of things. If you spend one minute looking around, you can take an item from the envelope below this packet.}
+  }
+
+\NEW{Sign}{\sCowboyDispTwo}{
+  \s\MYname {soldering station}
+  \s\MYloc  {24-3}
+  \s\MYtext {Equipment and wire adorn this otherwise unassuming desk.}
+  }
+
+\NEW{Sign}{\sBar}{
+  \s\MYname {A Bar}
+  \s\MYloc  {34-3}
+  \s\MYtext {Seats for four are arrayed on one side. The bar is beautifully carved mahogany. The bar is well stocked with sotch, whiskey and other proper English spirits. You cannot get behind the bar, but if there is a bartender, you may ask them to pour you a drink. 
+	
+	\emph{If you take a drink from the bartender, pay them back by chatting to them about your character.}}
+  }
+
+\NEW{SignMedium}{\sOpiumHoleOne}{
+  \s\MYname {a dark, hollow part of the wall - Sign \#342}
+  \s\MYloc {???}
+  \s\MYtext {This part of the ship seems very strange. You may not interact with this sign unless you know otherwise.}
+ }
+
+\NEW{SignMedium}{\sOpiumHoleTwo}{
+  \s\MYname {a hidden recess in the wall}
+  \s\MYloc {???}
+  \s\MYtext {Looks like this hiding spot was specially built into the {\it Dauntless}. You may, once per game, take one and only one of the items taped to the back of this sign.}
+  }
+
+\NEW{SignMedium}{\sOpiumHoleThree}{
+  \s\MYname {Sign \#822}
+  \s\MYloc  {???}
+  \s\MYtext {You may not interact with this sign. Only if you have been directly instructed to, you may look at the sign underneath this one.}
+  }
+
+\NEW{SignMedium}{\sOpiumHoleFour}{
+  \s\MYname {Blackwell's secret stash}
+  \s\MYloc  {???}
+  \s\MYtext {This hidden niche in the wall holds Lord Blackwell's personal effects. Among them is a tightly sealed metal box. The only way to take the metal box down is to drop it onto the floor from its hiding spot. You will not be able to put it back. If you want to do this, remove the item taped to the back of this sign, drop it on the floor in front of the sign, and write ``LOOTED'' on this sign. The item is now ingame.}
+  }
+
+\NEW{SignMedium}{\sBomb}{
+  \s\MYname {A ticking mechanical contraption}
+  \s\MYloc {Item \#645}
+  \s\MYtext {This item is wired with explosives and a clock. If the timer near this sign goes off, anybody within ZoC is Wounded. Anyone within double-ZoC is knocked out. You may not interact with this item unless you know otherwise - if you want to do something meaningful with this sign, see a GM.}
+  }

@@ -1,0 +1,51 @@
+%%%%%
+%%
+%% Research Notebooks live in this directory.  This file doubles as a
+%% latex'able example notebook.
+%%
+%% Notebook macros (in ../Lists/notebook-LIST.tex, presumably) each
+%% have a file that lives here.  The argument to \startnotebook{...}
+%% probably should be the macro for the given whitesheet.  However,
+%% you can also just use \name{Some Text} if you want.
+%%
+%% Note that every \startnotebook command needs a matching
+%% \endnotebook command.  Also note that no ownership information
+%% appears on the notebook.
+%%
+%%%%%
+
+\documentclass[notebook]{airship}
+\begin{document}
+
+\startnotebook{\nOpium{}}
+
+\begin{page}{pre}
+This notebook is not transferable. You may turn to the next page.
+\end{page}
+
+\begin{page}{first}
+
+The first location is at the front of the ship, in 34-3. Go there and stare out the main window for two minutes, uninterrupted. If you talk, use an ability, attack or are attacked, you must start over. When you complete this step, you may turn to \nbref{second}.
+\end{page}
+
+\begin{page}{second}
+
+An interesting data point. The second location is at the end of 26-3. Go there and pace around the connection to building 16 for two minutes, uninterrupted. If you talk, use an ability, attack or are attacked, you must start over. When you are done, you may turn to \nbref{third}.
+\end{page}
+
+\begin{page}{third}
+
+One more, and you think you've got something. The third location is at the end of 38-3, just outside the far 38 stairs. Sit down and face the wall for two minutes, uninterrupted. If you talk, use an ability, attack or are attacked, you must start over. When you are done, you may turn to \nbref{fourth}.
+\end{page}
+
+\begin{page}{fourth}
+
+Aha! You're still not sure what the data points are indicating, but you'll know it if you ever run into it. You may now interact with Sign \#342 , if you ever see such a sign. You may look at the sign behind it and follow the instructions written there.
+
+There are no more pages.
+\end{page}
+
+
+\endnotebook
+
+\end{document}

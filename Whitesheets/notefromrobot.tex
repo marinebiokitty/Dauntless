@@ -1,0 +1,37 @@
+%%%%%
+%%
+%% Whitesheets live in this directory.  This file doubles as a
+%% latex'able example whitesheet.
+%%
+%% Whitesheet macros (in ../Lists/white-LIST.tex, presumably) each
+%% have a file that lives here.  The argument to \name{...} probably
+%% should be the macro for the given whitesheet.  However, you can also
+%% just use \name{Some Text} if you want.
+%%
+%% Note that for whitesheets, \name doesn't actualy typeset anything.
+%% If you want the ``title'' of the IG document to appear, typeset it
+%% how you want it.  Similarly, no ownership information appears on
+%% the sheet.
+%%
+%%%%%
+
+\documentclass[white]{airship}
+\begin{document}
+
+\name{\wNoteFromRobotToNPCWhore{}} %% used as a label, doesn't typeset anything
+
+{\it This note is smudged with black stains, and is written in a deliberate, childish handwriting, as if some parent forced their naughty son or daughter to write a letter to a hated grandparent.}
+
+{\bf
+
+Miss Genevieve - 
+\\
+Thanks for letting me play with the pretty piece of jewelry. I'll take real good care of it, and clean it and put it in my room, and will return it whenever you want.
+
+Thank you again,
+
+\cRobot{\MYname{}}}
+
+{\it A failed, wobbly attempt at cursive adorns the bottom of this page.}
+
+\end{document}

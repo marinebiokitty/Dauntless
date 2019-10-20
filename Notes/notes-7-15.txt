@@ -1,0 +1,213 @@
+CID
+--daughter of JACK and NOBLE
+--rival of CURIE
+--ROBOT BOY's surrogate mother/father-figure
+--part of CAPTAIN's CREW
+
+CAPTAIN
+--THIEF's father
+--some connection to OPIUM DEALER
+--has CID, ROBOT BOY on crew
+--hires WHORE as music teacher
+--searching for a husband for THIEF
+
+JACK
+--married to NOBLE
+--is CID's mother but doesn't know it
+--has goods that will be stolen by THIEF
+--*really* dislikes WHORE
+
+CURIE
+--CID's rival
+--ROBOT BOY's creator
+--doesn't believe CAPTAIN's ship can make it
+--hired SABOTEUR through 3rd party
+
+ROBOT BOY
+--made my CURIE
+--hangs out with CID
+--part of CAPTAIN's crew
+
+VICAR WOLF
+--CAPTAIN's brother
+--godfather of THIEF
+--missionary to india (that's where he became a werewolf)
+--smuggles STUDENT on board
+
+WHORE
+--hired by CAPTAIN
+--music / dance / theater teacher to THIEF
+--wants to lure out JACK so she pretends to be a whore
+--trying to catch SABOTEUR since she's a Scotland Yard
+
+THIEF
+--CAPTAIN's daughter
+--wants JACK's goods
+--courted by OPIUM DEALER
+--girlish crush on CID
+--trained by WHORE
+
+NOBLE
+--JACK's husband
+--CID's father (doesn't know)
+--contact with OPIUM DEALER
+(mempack: has seen SABOTEUR)
+
+OPIUM DEALER
+--courting the THIEF
+--some connection to CAPTAIN
+--some conntection to NOBLE
+
+STUDENT
+--was missionized by VICAR
+--is fleeing OPIUM DEALER
+--has read SABOTEUR's writings (philosophy)
+
+SABOTEUR
+--hired by CURIE though 3rd party
+--trying to kill the NOBLE
+
+BODDY
+--fought in the war with the CAPTAIN
+--political ally of NOBLE
+--pushing OPIUM DEALER out of business (is massively underworld sketchy)
+--WHORE supposedly investigating him
+--bought ROBOT BOY from CURIE and got ROBOT BOY hired by CAPTAIN
+--knows VICAR, JACK tangentially
+
+-------------
+-------------
+
+places:
+ENGINE ROOM
+DECK
+PERSONAL QUARTERS
+BRIDGE
+BAR/RESTAURANT = common room
+
+-------------
+-------------
+what doing in game:
+
+CID
+--fix pre-existing ship problem (at gamestart? random event?)
+--reconcile with parents
+--fix robot in secret
+
+CAPTAIN
+--general troubleshooting ("let nothing besmirch this maiden voyage" "finest ship ever built")
+--marry off daughter / keeping eye out for eligible son in law
+--find some opium
+
+
+JACK
+--WHORES WHORES WHORES RUINED EVERYTHING
+--EVERYONE IS A WHORE EVERYONE IS A WHORE
+--KILL KILL KILL ALL THE WHORES GUT THEM LIKE PIGS
+
+CURIE
+--escape rigged ship
+--break ship
+--wants robot boy
+--fucked family angst (Thief is not a feminist!!)
+
+COWBOY (fear of heights)
+--cack opium dealer (with proof)
+--needs to be fixed
+--political Texas / anarchist plot with Noble, Boddy?
+--reads lots of Persian Dancer's stuff. Philosophical. wants in pants
+
+ROBOT BOY
+--humanity/growing up/fixing self plot
+--choose your mommy: Cid or Curie?
+--fix the ship
+--"What do I want to be when I grow up?" -- caught between like 5 people
+
+VICAR
+--preserve Thief's innocent little child status!
+--convert atheist cowboy / discredit Parisian's philosophy
+--hide your lycanthropy (which you got in India)
+--teach Robot Boy to be a priest
+--brother's (Noble's) opium/whores plot
+--bitch at Mdm. Curie for leaving Captain
+
+WHORE
+--investigate Opium Dealer
+--investigate Saboteurs and stop them
+--investigate Boddy --> investigate his murder
+--arrest Jack the Ripper
+--train the thief to sing/be cultured
+--sleeping with Noble for intel
+
+THIEF
+--thrillseeker
+--total fucking klepto (Jack's jewels --> steal now)
+--attracted to sketch
+--thinks robot is cuuuute
+--wants Opium Dealer to be a BAD BAD BOY OH SPANK ME NOW OH OOOOHHHHHH OH OHOH
+--dealing with mom
+--easy to sneak out on Vicar
+--keep up appearance for dad
+--sleep late
+
+NOBLE
+--likes whores, and is whoring the Whore
+--political worries (Boddy is dead!)
+--sketchy deal with opium dealer (money laundering!)
+--afraid of assassinations
+--misses kids (blames wife, is suspicious of wife, thinks she's a freakjob)
+--hitting on Thief
+--likes virgins
+--gambling
+--lost wedding ring (in whore / lost in poker)
+
+OPIUM DEALER
+--court thief, be nice
+--solidify underworld plot with Noble (money laundering)
+--impress Captain
+--get that "damn American" Cowboy
+--get legit
+--trying to use Robot as protege
+--find all the opium
+--has dead companion whore (pregame)
+
+Saboteur (has extra parachute)
+--assassinate Noble
+--sabotage ship
+--recruit!
+-- cowboy
+
+-----------------
+-----------------
+ADMIN STUFF
+
+Add/remove characters/finalize? CHECK
+What will characters be doing? CHECK
+What mechanics? NOT YET DONE
+
+Assign Sheets:
+DVP: Captain, Whore, Thief, Noble
+L47: Jack, Curie, Robot Boy
+SP: Cid, Vicar Wolf
+AT: Cowboy, Opium Dealer, Saboteur
+
+Assign:
+L47: Opium Greensheet
+AT: History Whitesheet
+DVP: Fixing/Breaking Ship Greensheet
+
+-----
+RUNTIME:
+
+Dead plants/ NPCs
+
+BOddy:
+--hired and fought in the war with the Captain
+--political ally of noble
+--pushing opium dealer out of underworld business
+--one last hurry: fill the whole fucking comissioned ship with opium!!
+--whore sent to investigate his illicit dealings
+--curie sold robot boy to him
+--got robot boy hired by captain
+--knows vicar, thief tangentially
+--knows jack tangentially

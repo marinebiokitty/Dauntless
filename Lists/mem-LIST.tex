@@ -1,0 +1,206 @@
+%%%%%
+%%
+%% This file sets up the Mem, MemFold, and MemEnvelope datatypes, and
+%% creates possible macros for each.
+%%
+%% The Mem datatype isn't really used directly; it's there so the
+%% other 2 datatypes can inherit and share its code.
+%%
+%%%%%
+
+\DECLARESUBTYPE{Mem}{Element}
+\PRESETS{Mem}{
+  %% \MYname is the trigger
+  \F\MYtext	%%  text
+  }
+
+
+%%%%%
+%% MemFold and MemEnvelope are both subtypes of Mem.  They are really
+%% only distinguishable by what they eventually get typeset as, hence
+%% by what they may get \MAP'ed to.
+\DECLARESUBTYPE{MemFold}{Mem}
+\DECLARESUBTYPE{MemEnvelope}{Mem}
+
+
+%%%%%
+%% \memfold{<trigger>}{<text>}
+%% \memenvelope{<trigger>}{<text>}
+%%
+%% These are wrappers around \INSTANCE, useful as 1-shots.
+\newinstance{MemFold}{\memfold[2]}{
+  \s\MYname{#1}\s\MYtext{#2}}
+
+\newinstance{MemEnvelope}{\memenvelope[2]}{
+  \s\MYname{#1}\s\MYtext{#2}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NEW{MemEnvelope}{\mBPacket}{
+  \s\MYname	{B-Packet}
+  \s\MYtext	{The most important thing in life is doing whatever you need to do to
+get ahead.  Considering that fact, if that means lying, cheating,
+stealing, manpulating people, or whatever, it doesn't matter as long
+as you end up getting what you want.  People are means to an end, and
+are tools to be used as such.  Trust as few people as possible for as
+short as possible, lest they betray you and stab you in the back.
+Remember other people are ambitious too, and there is no such thing as
+being too paranoid.  In the end, the only person you can trust
+completely is yourself. In the meantime, you can probably get a lot
+of training from \cDealer{\intro}. {\em You may use the enclosed ability.}}
+  \s\MYabils    {\aRDealer{}}
+  }
+\NEW{MemEnvelope}{\mCPacket}{
+  \s\MYname	{C-Packet}
+  \s\MYtext     {You realize that you should listen to your Mother more. She was the one who made you, and has always taken care of you. You will probably be an engineer one day just like her, but for now you're satisfied just being Mother's helper. {\em You may use the enclosed ability.}}
+  \s\MYabils    {\aRCurie{}}
+  }
+
+\NEW{MemEnvelope}{\mVPacket}{
+  \s\MYname	{V-Packet}
+  \s\MYtext     {You realize that you have a higher calling in life. You want
+to help people be nice to each other, and resolve their problems. You
+don't understand precisely who God is, or how it is that he seems to be so
+powerful, but you resolve to learn more. Maybe there are books that can tell you
+all about him. In the meantime, you can probably get a lot of training from \cVicar{\intro}. {\em You may use the enclosed ability.}}
+  \s\MYabils    {\aRVicar{}}
+   }
+
+\NEW{MemEnvelope}{\mSPacket}{
+  \s\MYname	{S-Packet}
+  \s\MYtext     {You like fixing things! The most important calling in life
+is to make sure airships stay afloat, trains don't crash, and machines keep on working.
+You like tinkering with things, and figuring out how they work, but you would certainly
+like to know more. You can probably get a lot of training from \cCid{\intro}. {\em You may use the enclosed ability.}}
+  \s\MYabils    {\aRCid{}}
+  }
+
+\NEW{MemFold}{\mWeddingRing}{
+  \s\MYname	{Open if you see item number 37.}
+  \s\MYtext	{That looks just like you and your husband's wedding rings! But you're wearing {\em your} wedding ring{\ldots}}
+  }
+
+
+\NEW{MemFold}{\mMaryPerformanceTime}{
+  \s\MYname	{{\bf SP Packet}. Open when you use your "Singing Performance" ability.}
+  \s\MYtext	{You begin singing. Feel free to roleplay accordingly. Take your $\alpha$ score, and subtract it from your $\beta$ score. Now open the {\bf S-packet} that corresponds to this difference ($\beta$ - $\alpha$).}
+  }
+
+\NEW{MemFold}{\mMaryPerformanceResultBadThree}{
+  \s\MYname	{{\bf S-Packet}: -10 to -8. Do not open this unless directly instructed.}
+  \s\MYtext	{You sing atrociously, your voice grating on even your own ears. Ms. Watson must have had no talent! You feel the need to go back to your room and cry. Roleplay accordingly.}
+  }
+
+\NEW{MemFold}{\mMaryPerformanceResultBadTwo}{
+  \s\MYname	{{\bf S-Packet}: -7 to -4. Do not open this unless directly instructed.}
+  \s\MYtext	{You sing badly, and you're not entirely sure why. You did just as Ms. Watson instructed{\ldots}. You feel upset and want to go back to your room. Roleplay accordingly.}
+  }
+
+\NEW{MemFold}{\mMaryPerformanceResultBadOne}{
+  \s\MYname	{{\bf S-Packet}: -3 to -1. Do not open this unless directly instructed.}
+  \s\MYtext	{You're off today, you think. You sing with a few mistakes, slightly below average. You can do much better than this. Maybe father should hire a new tutor. You feel embarassed. Roleplay accordingly.}
+  }
+
+\NEW{MemFold}{\mMaryPerformanceResultGoodOne}{
+  \s\MYname	{{\bf S-Packet}: 0 to +3. Do not open this unless directly instructed.}
+  \s\MYtext	{You sing decently in a clear, well-toned voice, but you can do better than this. Was all that practice good for nothing? You feel somewhat disappointed, but it was good enough. The enclosed ability card is now yours. Roleplay accordingly.}
+  }
+
+\NEW{MemEnvelope}{\mMaryPerformanceResultGoodTwo}{
+  \s\MYname	{{\bf S-Packet}: +4 to +7. Do not open this unless directly instructed.}
+  \s\MYtext	{You sing wonderfully! This is one of the best performances of your life! Father will surely be proud of you! The enclosed ability card is now yours.}
+  }
+
+\NEW{MemEnvelope}{\mMaryPerformanceResultGoodThree}{
+  \s\MYname	{{\bf S-Packet}: +8 to +10. Do not open this unless directly instructed.}
+  \s\MYtext	{Your voice is angelic in quality! This is the best you have ever sung, and probably the best you ever will in the future! The enclosed ability card is now yours. For the next thirty minutes, you are immune to effects that would make you {\bf Winded} and your {\bf CR} increases by one! Also, you can {\bf Pick Locks} in half the time you could normally.}
+  }
+
+\NEW{MemFold}{\mLPacket}{
+  \s\MYname	{``L Packet''}
+  \s\MYtext	{You have just learned the combination to the combination locks on the {\em HMS Dauntless}. You may now freely open {\bf item \# 35-C} and {\bf item \# 152}. You may tell the combination to other people. If you do this, tell them to open their {\bf L Packet}.}
+  }
+
+\NEW{MemEnvelope}{\mPI}{
+  \s\MYname	{PI Packet}
+  \s\MYtext	{This is strangely reminiscent of something, as if these doodles were meant for you alone. You think you can triangulate where that X is pointing to. Open up to page one of the notebook enclosed in this packet.}
+  }
+
+
+\NEW{MemEnvelope}{\mCaptainX}{
+  \s\MYname	{X Packet}
+  \s\MYtext	{The memory packets contained within are now yours.}
+  }
+
+\NEW{MemFold}{\mCaptainOpiumZero}{
+  \s\MYname	{Open at game start.}
+  \s\MYtext	{You have a sequence of {\em Z Packets} labeled one through six. If you fail to take enough opium, you will be instructed to open the next {\em Z Packet} in the sequence. You should open your {\em Z-1 Packet} now.}
+  }
+
+\NEW{MemFold}{\mCaptainOpiumOne}{
+  \s\MYname	{If you have not consumed a dose of opium by T+45.}
+  \s\MYtext	{Open the next {\em Z Packet} in the sequence.}
+  }
+
+\NEW{MemFold}{\mCaptainOpiumTwo}{
+  \s\MYname	{If you have not consumed a dose of opium by T+90.}
+  \s\MYtext	{Open the next {\em Z Packet} in the sequence.}
+  }
+
+\NEW{MemFold}{\mCaptainOpiumThree}{
+  \s\MYname	{If you have not consumed {\bf two} doses of opium by T+135.}
+  \s\MYtext	{Open the next {\em Z Packet} in the sequence.}
+  }
+
+\NEW{MemFold}{\mCaptainOpiumFour}{
+  \s\MYname	{If you have not consumed {\bf two} doses of opium by T+180.}
+  \s\MYtext	{Open the next {\em Z Packet} in the sequence.}
+  }
+
+\NEW{MemFold}{\mCaptainOpiumFive}{
+  \s\MYname	{If you have not consumed {\bf three} does of opium by T+215.}
+  \s\MYtext	{Open the next {\em Z Packet} in the sequence.}
+  }
+
+\NEW{MemFold}{\mCaptainZOne}{
+  \s\MYname	{``Z-1 Packet'' (Open at game start)}
+  \s\MYtext	{Shrapnel from the Steam War scrapes and moves against your ribs, then settles in a moderately uncomfortable position inside you. There are no game effects. Roleplay accordingly.}
+  }
+
+\NEW{MemFold}{\mCaptainZTwo}{
+  \s\MYname	{``Z-2 Packet''}
+  \s\MYtext	{Your heart lurches brutally in your chest. Fall prone; you may not stand up for one minute. For the next five minutes after you get up, you are {\em Winded}: you may only walk heel-toe. Roleplay accordingly.}
+  }
+
+\NEW{MemFold}{\mCaptainZThree}{
+  \s\MYname	{``Z-3 Packet''}
+  \s\MYtext	{Your head spins, blood rushes to your eyes and ears. Fall unconscious for five minutes, or until someone wakes you. You are {\em Winded} for ten minutes: you may only walk heel-toe and your CR is reduced by one. Roleplay accordingly.}
+  }
+
+\NEW{MemFold}{\mCaptainZFour}{
+  \s\MYname	{``Z-4 Packet''}
+  \s\MYtext	{Your body aches all over. Small lesions appear on your chest. The taste of blood and bile fills the back of your throat. For the rest of game, your CR is reduced by one permanently. You may no longer move faster than a walk. Fall unconscious for five minutes. You may not be woken up during this time. Roleplay accordingly.}
+  }
+
+\NEW{MemFold}{\mCaptainZFive}{
+  \s\MYname	{``Z-5 Packet''}
+  \s\MYtext	{You have a heart attack and enter temporary cardiac arrest. Fall to the ground unconscious for one minute. There are no additional game effects. You have forty-five minutes to find some opium, or else you will not survive the night. Roleplay accordingly.}
+  }
+
+\NEW{MemFold}{\mCaptainZSix}{
+  \s\MYname	{``Z-6 Packet''}
+  \s\MYtext	{Your heart stops beating. Fall to the ground in a faint. You are dead. Leave your namebadge and items on the ground and see a GM for further instruction.}
+  }
+
+\NEW{MemEnvelope}{\mAmazing}{
+  \s\MYname	{if you see something amazing}
+  \s\MYtext	{Wow!  That was amazing!  Hey, you seem to be able to
+		do amazing things, too.  See the enclosed greensheet
+		and ability.}
+  \s\MYabils	{\aTest{}}
+  \s\MYgreens	{\gTest{}}
+  }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,27 @@
+%%%%%
+%%
+%% This file sets up the Notebook datatype and creates Notebook macros.
+%% These are for research notebooks.
+%%
+%%%%%
+
+\DECLARESUBTYPE{Notebook}{TransElement}
+\PRESETS{Notebook}{
+  \FD\MYfile	{} %% filename (in \notebooks dir)
+  \FS\MYtext	{\getextractenvs{document}{\notebooks/\MYfile}}
+  }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NEW{Notebook}{\nOpium}{
+  \s\MYname	{Searching for Something}
+  \s\MYfile	{opium.tex}
+  }
+
+\NEW{Notebook}{\nBomb}{
+  \s\MYname	{OH DEAR LORD IT'S A BOMB!}
+  \s\MYfile	{bomb.tex}
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

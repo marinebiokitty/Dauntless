@@ -1,0 +1,64 @@
+%%%%%
+%%
+%% This file sets up the White datatype and creates White macros.
+%% These are for whitesheets.
+%%
+%%%%%
+
+\DECLARESUBTYPE{White}{TransElement}
+\PRESETS{White}{
+  \FD\MYfile	{} %% filename (in \whites dir)
+  \FS\MYtext	{\getextractenvs{document}{\whites/\MYfile}}
+  }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NEW{White}{\wTest}{
+  \s\MYname	{Test Whitesheet}
+  \s\MYfile	{README.tex}
+  }
+
+\NEW{White}{\wListOfPassengers}{
+  \s\MYname	{a list of names}
+  \s\MYfile	{listpass.tex}
+  }
+
+\NEW{White}{\wInvite}{
+  \s\MYname	{a party invitation}
+  \s\MYfile	{invite.tex}
+  }
+
+\NEW{White}{\wNoteFromRobotToNPCWhore}{
+  \s\MYname	{a handwritten note}
+  \s\MYfile	{notefromrobot.tex}
+  }
+
+\NEW{White}{\wDeBeersLabour}{
+  \s\MYname	{a mysterious letter}
+  \s\MYfile	{debeerslabour.tex}
+  }
+
+\NEW{White}{\wDeBeersMob}{
+  \s\MYname	{a mysterious letter}
+  \s\MYfile	{debeersmob.tex}
+  }
+
+\NEW{White}{\wDeBeersAmerica}{
+  \s\MYname	{a mysterious letter}
+  \s\MYfile	{debeersamerica.tex}
+  }
+
+\NEW{White}{\wDeBeersFrance}{
+  \s\MYname	{a mysterious letter}
+  \s\MYfile	{debeersfrance.tex}
+  }
+
+\NEW{White}{\wOpiumPlot}{
+  \s\MYname	{scrap notes}
+  \s\MYfile	{boddyopiumplot.tex}
+  }
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

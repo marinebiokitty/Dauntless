@@ -1,0 +1,39 @@
+Production/README
+
+This directory is a convenient place from which to run the actual
+production of the game.  Editing and elatex'ing the files here is a
+straightforward way to print elements for production, compendium, or
+runtime.
+
+The \production command is defined for each type of file to do
+something appropriate for production.  Similarly, \compendium is
+defined to do something appropriate for printing a compendium.  For
+example:
+
+  \documentclass[listblue]{game}
+  \begin{document}
+  \production
+  \end{document}
+
+will produce all the bluesheets for each character, sorted by
+character.  Replacing \production with \compendium will produce one of
+every bluesheet.  Similarly, a list of Char macros will produce the
+bluesheets owned by the given characters, and a list of Blue macros
+will produce the given bluesheets.  Other options, as demonstrated by
+the -PRINT.tex files, are set up in a similar manner.
+
+Generally, \production will handle production of Place macros as well
+as Char macros.
+
+
+
+Multiple Runs: You can override \gamerun by defining \GAMERUN before
+\documentclass.  For example:
+
+  \def\GAMERUN{2}
+  \documentclass[listblue]{game}
+  \production
+  \end{document}
+
+will will produce all the bluesheets for each character for the second
+run of the game.

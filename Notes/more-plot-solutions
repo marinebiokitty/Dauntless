@@ -1,0 +1,44 @@
+Jewelry Heist
+-------------
+
+"Neptune's Tear"
+
+Jack is carrying some uberprecious piece of jewelry. She is famous for this piece of jewelry. She knows that dirtythiefwhores want it, because dirtythiefwhores always want to steal her pretty things. Now, two big things are supposed to happen at 10:30 (T+150). First, there will be a singing performance by Mary Archer. Then Lady Major will exhibit her famous jewelry piece. It has this big long history and comes with certificates of authenticity, a lock box, etc. It's in the Majors' room, under lots of locks and key. Several items and actions are needed to open it, including:
+--an application of the lockpicking mechanic
+--a usage of the Captain's Key, of which there are several lying around
+--the combination to the safe, clues to which are around the ship
+--an application of the lockpicking mechanic
+
+Opium Deal Plot
+---------------
+Boddy has a big fucking stack of letters on his person to send to people in case he dies. In fact, he has one for everybody in game! Two of them are for the Dealer and for the Noble.
+
+
+
+Captain's Opium Addiction Plot
+------------------------------
+Start of game ==> mempack "The explosion throws you to your feet. Pain in your chest. Hard to function. Find some opium, and fast. Open your X packet. If you continue to fail to get opium, your memory packets will instruct you to sequentially open your Z sequence packets."
+
+X packet ==>
+mempack "if you have not taken any shots of opium before T+45"
+mempack "if you have not taken any shots of opium before T+90"
+mempack "if you have taken one or less shots of opium before T+135"
+mempack "if you have taken one or less shots of opium before T+180"
+mempack "if you have taken two or less shots of opium before T+225"
+All these say something like "Open the next packet in your Z sequence."
+
+mempack "Z sequence: stage 1"
+"Your heart lurches brutally in your chest. Fall prone; you may not stand up for one minute. For the next five minutes after you get up, you are Winded: you may only walk heel-toe and your CR is reduced by one. Roleplay accordingly."
+mempack "Z sequence: stage 2"
+"Your heart lurches brutally in your chest. Fall prone; you may not stand up for one minute. For the next five minutes after you get up, you are Winded: you may only walk heel-toe and your CR is reduced by one. Roleplay accordingly."
+mempack "Z sequence: stage 3"
+"Your head spins, blood rushes to your eyes and ears. Fall unconscious for five minutes, or until someone wakes you. You are Winded for ten minutes: you may only walk heel-toe and your CR is reduced by one. Roleplay accordingly."
+mempack "Z sequence: stage 4"
+"Your body aches all over. Small lesions appear on your chest. The taste of blood and bile fills the back of your throat. For the rest of game, your CR is reduced by one. You may no longer move faster than a walk. Fall unconscious for five minutes. You may not be woken up during this time. Roleplay accordingly."
+mempack "Z sequence: stage 5"
+"Your heart stops beating. Fall to the ground in a faint. You are dead. Leave your namebadge and items on the ground and see a GM for further instruction."
+
+Ring in Whore Plot
+------------------
+There is a letter in the dead whore's room that implicated the Robot Boy in taking the ring. The Robot Boy has the ring in a box filled with other shiny things in his room, and is supposed to be keeping it for her. (psych lim: does not understand death?)
+

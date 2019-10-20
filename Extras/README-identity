@@ -1,0 +1,57 @@
+This file is currently just an outline.
+
+
+
+
+The Identity datatype:
+
+  \NEW{Identity}{\idDisguise}{
+    \s\MYname	{Disguise}
+    \s\MYmods	{\rs\MYdesc	{obviously disguised person}
+		\rs\MYnumber	{????}
+		\badgetrue
+		}
+    }
+
+
+
+
+Identity instances:
+
+  \newid{<command>}{<mods>}
+  <command>[<switches>]{<arg>}
+  \identity[<number>]{<name>}{<mods>}
+
+
+
+
+Ready-made instances:
+
+  \realname{<name>}
+  \real[<switches>]{<arg>}
+  \nickname{<name>}
+  \nick[<switches>]{<arg>}
+  \maidenname{<name>}
+  \maiden[<switches>]{<arg>}
+
+
+
+
+Degnerate Uses of Identities:
+
+  \extrabadge{<name>}{<number>}{<desc>}
+  \same
+  \boxlabel{<label>}
+
+
+
+
+Examples:
+
+  \s\MYids	{\nick[\badgetrue]{}}
+
+
+  \NEW{Item}{\iMask}{
+    \s\MYname	{nice mask}
+    \s\MYids	{\idDisguise{}}
+    }

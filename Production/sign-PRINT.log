@@ -1,0 +1,563 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.8)  2 DEC 2017 08:28
+entering extended mode
+**C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/Production/sign-PRINT.tex
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/Production/sign-PRINT.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
+(C:\Users\charf\OneDrive\Documents\GitHub\Dauntless\LaTeX\airship.cls
+(C:\Users\charf\OneDrive\Documents\GitHub\Dauntless\LaTeX\airship_path.cls)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/LaTeX/gametex.sty
+Document Class: airship 
+  --- Flight of the Dauntless --- RUN 2, December 2nd, 2017 ---
+\@multicount=\count79
+\@mapbox=\box26
+\@@@unique=\count80
+\@jobcnt=\count81
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count82
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@subparagraph=\count87
+\c@figure=\count88
+\c@table=\count89
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+))) 
+  Options: --> signs --> cardsheet --> fullsheet 
+  Packages: pslatex verbatim multicol comma multido pstcol graphicx lscape
+("C:\Program Files\MiKTeX 2.9\tex\latex\pslatex\pslatex.sty"
+Package: pslatex 1996/07/24 v1.2 pslatex emulation (DPC)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 65.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ptmcm/m/n on input line 65.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptmcm/m/n on input line 65.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 66.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ptmcm/m/it on input line 66.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ptmcm/m/it on input line 66.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 67.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/pzccm/m/n on input line 67.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/pzccm/m/n on input line 67.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 68.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 68.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 68.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 74.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 74.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 74.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 75.
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks14
+\verbatim@line=\toks15
+\verbatim@in@stream=\read1
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
+Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+\c@tracingmulticols=\count90
+\mult@box=\box27
+\multicol@leftmargin=\dimen103
+\c@unbalance=\count91
+\c@collectmore=\count92
+\doublecol@number=\count93
+\multicoltolerance=\count94
+\multicolpretolerance=\count95
+\full@width=\dimen104
+\page@free=\dimen105
+\premulticols=\dimen106
+\postmulticols=\dimen107
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box28
+\last@line=\box29
+\maxbalancingoverflow=\dimen108
+\mult@rightbox=\box30
+\mult@grightbox=\box31
+\mult@gfirstbox=\box32
+\mult@firstbox=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\c@columnbadness=\count96
+\c@finalcolumnbadness=\count97
+\last@try=\dimen109
+\multicolovershoot=\dimen110
+\multicolundershoot=\dimen111
+\mult@nat@firstbox=\box51
+\colbreak@box=\box52
+\mc@col@check@num=\count98
+) (C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\latex\comma\comma.sty
+Package: comma 1997/12/15 v1.2 Insert commas every three digits (DPC)
+) (C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\latex\multido\multido.sty
+Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
+
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\multido\multido.tex  v1.
+42, 2010/05/14 <tvz>
+\multido@count=\count99
+\multidocount=\count100
+\multido@stuff=\toks16
+)
+File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\pstricks\pstcol.sty"
+Package: pstcol 2007/04/11 v1.3 LaTeX wrapper for `PSTricks' (RN,HV)
+
+Package pstcol Warning: ************************************ 
+(pstcol)                The package `pstcol' is obsolet! 
+(pstcol)                You should use `pstricks' directly: 
+(pstcol)                    \usepackage{pstricks}
+(pstcol)                ************************************.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pstricks\pstricks.sty"
+Package: pstricks 2017/03/17 v0.63 LaTeX wrapper for `PSTricks' (RN,HV)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count101
+)) ("C:\Program Files\MiKTeX 2.9\tex\generic\pstricks\pstricks.tex" ("C:\Progra
+m Files\MiKTeX 2.9\tex\generic\xkeyval\pst-xkey.tex"
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex" ("C:\Program Fil
+es\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\keyval.tex"))
+\XKV@depth=\count102
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))) ("C:\Program Files\MiKTeX 2.9\tex\generic\pstricks\pst-fp.tex" `pst-fp' v0.
+05, 2010/01/17 (hv)
+\pstFP@xs=\count103
+\pstFP@xia=\count104
+\pstFP@xib=\count105
+\pstFP@xfa=\count106
+\pstFP@xfb=\count107
+\pstFP@rega=\count108
+\pstFP@regb=\count109
+\pstFP@regs=\count110
+\pstFP@times=\count111
+)
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-co
+mmon.tex
+\pgfutil@everybye=\toks19
+\pgfutil@tempdima=\dimen112
+\pgfutil@tempdimb=\dimen113
+
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-co
+mmon-lists.tex))
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.co
+de.tex
+\pgfkeys@pathtoks=\toks20
+\pgfkeys@temptoks=\toks21
+
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeysfil
+tered.code.tex
+\pgfkeys@tmptoks=\toks22
+))
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgffor.cod
+e.tex
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.te
+x
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathcalc.cod
+e.tex
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathutil.cod
+e.tex
+\pgf@x=\dimen114
+\pgf@xa=\dimen115
+\pgf@xb=\dimen116
+\pgf@xc=\dimen117
+\pgf@y=\dimen118
+\pgf@ya=\dimen119
+\pgf@yb=\dimen120
+\pgf@yc=\dimen121
+\c@pgf@counta=\count112
+\c@pgf@countb=\count113
+\c@pgf@countc=\count114
+\c@pgf@countd=\count115
+\pgfutil@tempcnta=\count116
+\pgfutil@tempcntb=\count117
+)
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathparser.c
+ode.tex
+\pgfmath@dimen=\dimen122
+\pgfmath@count=\count118
+\pgfmath@box=\box53
+\pgfmath@toks=\toks23
+\pgfmath@stack@operand=\toks24
+\pgfmath@stack@operation=\toks25
+)
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.code.tex
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.basic.code.tex)
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.trigonometric.code.tex)
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.random.code.tex)
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.comparison.code.tex)
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.base.code.tex)
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.round.code.tex)
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.misc.code.tex)
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.integerarithmetics.code.tex)))
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfloat.co
+de.tex
+\c@pgfmathroundto@lastzeros=\count119
+))
+\pgffor@iter=\dimen123
+\pgffor@skip=\dimen124
+\pgffor@stack=\toks26
+\pgffor@toks=\toks27
+)
+\psLoopIndex=\count120
+`PSTricks' v2.73a  <2017/05/22> (tvz)
+\pst@dima=\dimen125
+\pst@dimb=\dimen126
+\pst@dimc=\dimen127
+\pst@dimd=\dimen128
+\pst@dimg=\dimen129
+\pst@dimh=\dimen130
+\pst@dimm=\dimen131
+\pst@dimn=\dimen132
+\pst@dimo=\dimen133
+\pst@dimp=\dimen134
+\pst@hbox=\box54
+\pst@ibox=\box55
+\pst@boxg=\box56
+\pst@cnta=\count121
+\pst@cntb=\count122
+\pst@cntc=\count123
+\pst@cntd=\count124
+\pst@cntg=\count125
+\pst@cnth=\count126
+\pst@cntm=\count127
+\pst@cntn=\count128
+\pst@cnto=\count129
+\pst@cntp=\count130
+\@zero=\count131
+\pst@toks=\toks28
+("C:\Program Files\MiKTeX 2.9\tex\generic\pstricks\pstricks.con")
+\psunit=\dimen135
+\psxunit=\dimen136
+\psyunit=\dimen137
+\pst@C@@rType=\count132
+\pslinewidth=\dimen138
+\psk@startLW=\dimen139
+\psk@endLW=\dimen140
+\pst@customdefs=\toks29
+\pslinearc=\dimen141
+\pst@symbolStep=\dimen142
+\pst@symbolWidth=\dimen143
+\pst@symbolLinewidth=\dimen144
+\everypsbox=\toks30
+\psframesep=\dimen145
+\pslabelsep=\dimen146
+\sh@wgridXunit=\dimen147
+\sh@wgridYunit=\dimen148
+\pst@shift=\dimen149
+)
+File: pstricks.tex 2017/05/22 v2.73a `PSTricks' (tvz,hv)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pstricks\pst-fp.tex")
+File: pst-fp.tex 2017/05/22 v2.73a `PST-fp' (hv)
+Package color Info: Redefining color darkgray on input line 145.
+Package color Info: Redefining color gray on input line 145.
+Package color Info: Redefining color lightgray on input line 145.
+Package color Info: Redefining color black on input line 178.
+Package color Info: Redefining color darkgray on input line 179.
+Package color Info: Redefining color gray on input line 180.
+Package color Info: Redefining color lightgray on input line 181.
+Package color Info: Redefining color white on input line 182.
+Package color Info: Redefining color red on input line 183.
+Package color Info: Redefining color green on input line 184.
+Package color Info: Redefining color blue on input line 185.
+Package color Info: Redefining color yellow on input line 189.
+Package color Info: Redefining color cyan on input line 190.
+Package color Info: Redefining color magenta on input line 191.
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/LaTeX/extraction.sty
+\!toks=\toks31
+)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/LaTeX/parsename.sty)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/LaTeX/datatypes.sty
+\:count=\count133
+\:toks=\toks32
+)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/Lists/char-LIST.tex)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/Lists/place-LIST.tex)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/Lists/blue-LIST.tex)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/Lists/green-LIST.tex)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/Lists/abil-LIST.tex)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/Lists/combat-LIST.tex)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/Lists/mem-LIST.tex)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/Lists/item-LIST.tex)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/Lists/white-LIST.tex)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/Lists/notebook-LIST.tex)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/Lists/money-LIST.tex)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/Lists/sign-LIST.tex)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/Lists/subowner-LIST.tex)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/Lists/gm-LIST.tex)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/Lists/run8-LIST.tex)
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip45
+\f@nch@O@elh=\skip46
+\f@nch@O@erh=\skip47
+\f@nch@O@olh=\skip48
+\f@nch@O@orh=\skip49
+\f@nch@O@elf=\skip50
+\f@nch@O@erf=\skip51
+\f@nch@O@olf=\skip52
+\f@nch@O@orf=\skip53
+)
+(C:/Users/charf/OneDrive/Documents/GitHub/Dauntless/LaTeX/cards.sty
+\front_card=\box57
+\back_card=\box58
+\front_box=\box59
+\back_box=\box60
+\front_page=\box61
+\back_page=\box62
+\scratch_dimen=\dimen152
+)
+\whitespace=\dimen153
+\signwidth=\dimen154
+\signheight=\dimen155
+\text@box=\box63
+\trig@box=\box64
+\bookwidth=\dimen156
+\bookheight=\dimen157
+\temp@dimen=\dimen158
+\temp@box=\box65
+
+(sign-PRINT.aux)
+\openout1 = `sign-PRINT.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 3.
+LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 3.
+
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omspzccm.fd"
+File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
+)
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 3.
+
+(C:\Users\charf\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count134
+\scratchdimen=\dimen159
+\scratchbox=\box66
+\nofMPsegments=\count135
+\nofMParguments=\count136
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count137
+\MPscratchDim=\dimen160
+\MPnumerator=\count138
+\makeMPintoPDFobject=\count139
+\everyMPtoPDFconversion=\toks34
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 18.66588pt on input line 13.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 18.66588pt on input line 13.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 13.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 22.39185pt on input line 13.
+LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 13
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptmcm.fd"
+File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 13
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlptmcm.fd"
+File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+psycm on input line 13
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxpsycm.fd"
+File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+ (sign-PRINT.aux)
+\openout1 = `sign-PRINT.aux'.
+
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 15.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 8.09995pt on input line 15.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 15.
+
+[1
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+
+] [2] (sign-PRINT.aux)
+\openout1 = `sign-PRINT.aux'.
+
+ [1
+
+] [2] (sign-PRINT.aux) ) 
+Here is how much of TeX's memory you used:
+ 12582 strings out of 493323
+ 185961 string characters out of 3139067
+ 309743 words of memory out of 3000000
+ 15918 multiletter control sequences out of 15000+200000
+ 24904 words of font info for 50 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 52i,13n,45p,794b,448s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.en
+c}<C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
+w/times/utmri8a.pfb>
+Output written on sign-PRINT.pdf (4 pages, 41780 bytes).
+PDF statistics:
+ 32 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

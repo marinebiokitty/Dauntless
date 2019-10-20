@@ -1,0 +1,102 @@
+%%%%%
+%%
+%% Research Notebooks live in this directory.  This file doubles as a
+%% latex'able example notebook.
+%%
+%% Notebook macros (in ../Lists/notebook-LIST.tex, presumably) each
+%% have a file that lives here.  The argument to \startnotebook{...}
+%% probably should be the macro for the given whitesheet.  However,
+%% you can also just use \name{Some Text} if you want.
+%%
+%% Note that every \startnotebook command needs a matching
+%% \endnotebook command.  Also note that no ownership information
+%% appears on the notebook.
+%%
+%%%%%
+
+\documentclass[notebook]{airship}
+\begin{document}
+
+\startnotebook{\nBomb{}}
+
+
+
+\begin{page}{Begin}
+
+This notebook is not transferable. If you want to attempt to defuse the bomb, spend 1 minute with a {\bf Toolkit} and proceed to the next page.
+\end{page}
+
+
+
+\begin{page}{Tick-tock.}
+{\it As you remove a panel on the device, you trip an internal switch. The device beings to beep.}
+
+Start the nearby timer. Proceed to page \nbref{A}.
+
+\end{page}
+
+
+
+\begin{page}{B}
+
+{\it The second step is to ground out the watchdog circuit.}
+
+\begin{enum}
+\item Shuffle the nearby deck of cards 3 times. 
+\item Deal out 5 cards.
+\item Deal out 4 cards below those.
+\item You may discard one of the top row of cards and replace it with one of the bottom row. Discard the bottom row.
+\item Repeat 3-4 until the top row has four cards all of the same value. If you have a {\bf Soldering Iron} and a {\bf Metal Sheet}, you may stop when the top row has three cards with the same value. Destroy the {\bf Metal Sheet}. Feel free to shout for items. If you run out of cards, begin again from step 1. 
+\item Proceed to page \nbref{C}.
+\end{enum}
+
+\end{page}
+
+
+
+
+\begin{page}{A}
+
+{\it The first step is to strip the external housing of the bomb.}
+
+\begin{enum}
+\item Shuffle the nearby deck of cards 3 times. 
+\item Deal out 5 cards.
+\item Deal out 4 cards below those.
+\item You may discard one of the top row of cards and replace it with one of the bottom row. Discard the bottom row.
+\item Repeat 3-4 until the top row has cards all of the same suit. If you have {\bf Copper Wire}, you may stop when the top row has two cards with the same value. Destroy the {\bf Copper Wire}. Feel free to shout for items. If you run out of cards, begin again from 1. 
+\item Proceed to page \nbref{B}.
+\end{enum}
+ 
+\end{page}
+
+
+
+\begin{page}{C}
+{\it Now, cut the red wire! Wait, maybe the blue one?}
+
+\begin{enum}
+\item Shuffle the nearby deck of cards 3 times. 
+\item Deal out 5 cards.
+\item Deal out 4 cards below those.
+\item You may discard one of the top row of cards and replace it with one of the bottom row. Discard the bottom row.
+\item Repeat 3-4 until the top row is a straight flush (numbers in sequence, all the same suit). If you have a {\bf Rigging Kit}, you may stop when the top row has two pairs in it. Feel free to shout for items. If you run out of cards, begin again from step 1. 
+\item Proceed to page \nbref{D}.
+\end{enum}
+
+
+\end{page}
+
+
+
+\begin{page}{D}
+
+{\it The beeping stops.}
+
+Success! Stop the timer. Write ``Defused'' on the sign. 
+
+\end{page}
+
+\endnotebook
+
+\end{document}

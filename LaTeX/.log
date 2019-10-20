@@ -1,0 +1,20 @@
+This is e-TeX, Version 3.14159-2.1 (Web2C 7.4.5) (format=elatex 2003.10.4)  4 DEC 2003 00:31
+entering extended mode
+**abil-PRINT
+(/usr/athena/share/texmf/tex/latex/tools/.tex
+! Interruption.
+<to be read again> 
+                   \begingroup 
+l.1 
+    %%
+? x
+ 
+Here is how much of TeX's memory you used:
+ 5 strings out of 95730
+ 142 string characters out of 1243120
+ 94507 words of memory out of 1050001
+ 3100 multiletter control sequences out of 10000+50000
+ 3640 words of font info for 14 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 3i,0n,1p,17b,6s stack positions out of 1500i,500n,5000p,300000b,40000s
+No pages of output.
