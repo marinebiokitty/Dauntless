@@ -1,1 +1,1 @@
-\edef\gamepath{"C:/Users/charf/OneDrive/Documents/GitHub/Dauntless"}  
+\edef\gamepath{"C:/Users/charf/Documents/GitHub/Dauntless"}

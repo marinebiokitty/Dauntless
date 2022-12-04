@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.13)  19 FEB 2022 16:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.13)  19 FEB 2022 13:53
 entering extended mode
-**C:/Users/charf/Documents/GitHub/Dauntless/Production/sign-PRINT.tex
-(C:/Users/charf/Documents/GitHub/Dauntless/Production/sign-PRINT.tex
+**C:/Users/charf/Documents/GitHub/Dauntless/Whitesheets/debeersamerica.tex
+(C:/Users/charf/Documents/GitHub/Dauntless/Whitesheets/debeersamerica.tex
 LaTeX2e <2018-12-01>
 (C:\Users\charf\Documents\GitHub\Dauntless\LaTeX\airship.cls
 (C:\Users\charf\Documents\GitHub\Dauntless\LaTeX\airship_path.cls)
@@ -29,7 +29,7 @@ File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 ))) 
-  Options: --> signs --> cardsheet --> fullsheet 
+  Options: --> white 
   Packages: pslatex verbatim multicol comma multido pstcol graphicx lscape
 
 ("C:\Users\charf\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pslatex\pslatex.st
@@ -413,61 +413,40 @@ s
 \f@nch@O@erf=\skip51
 \f@nch@O@olf=\skip52
 \f@nch@O@orf=\skip53
-) (C:/Users/charf/Documents/GitHub/Dauntless/LaTeX/cards.sty
-\front_card=\box58
-\back_card=\box59
-\front_box=\box60
-\back_box=\box61
-\front_page=\box62
-\back_page=\box63
-\scratch_dimen=\dimen152
-)
-\whitespace=\dimen153
-\signwidth=\dimen154
-\signheight=\dimen155
-\text@box=\box64
-\trig@box=\box65
-\bookwidth=\dimen156
-\bookheight=\dimen157
-\temp@dimen=\dimen158
-\temp@box=\box66
+) (C:\Users\charf\Documents\GitHub\Dauntless\LaTeX\doublespace.sty)
+No file debeersamerica.aux.
+\openout1 = `debeersamerica.aux'.
 
-(sign-PRINT.aux)
-\openout1 = `sign-PRINT.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 3.
-LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 3.
-
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 19.
+LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 19
+.
 ("C:\Users\charf\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omspzccm.fd
 "
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 3.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 ("C:\Users\charf\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
 df.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count134
-\scratchdimen=\dimen159
-\scratchbox=\box67
+\scratchdimen=\dimen152
+\scratchbox=\box58
 \nofMPsegments=\count135
 \nofMParguments=\count136
 \everyMPshowfont=\toks33
 \MPscratchCnt=\count137
-\MPscratchDim=\dimen160
+\MPscratchDim=\dimen153
 \MPnumerator=\count138
 \makeMPintoPDFobject=\count139
 \everyMPtoPDFconversion=\toks34
@@ -529,62 +508,7 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-)
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 6.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 18.66588pt on input line 6.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 6.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 22.39185pt on input line 6.
-LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 6.
-
-
-("C:\Users\charf\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ptmcm.fd
-"
-File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
-)
-LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 6.
-
-
-("C:\Users\charf\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omlptmcm.fd
-"
-File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
-)
-LaTeX Font Info:    Try loading font information for OMX+psycm on input line 6.
-
-
-("C:\Users\charf\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omxpsycm.fd
-"
-File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
- (sign-PRINT.aux)
-\openout1 = `sign-PRINT.aux'.
-
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 13.
-LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 13.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 13.
-LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 8.09995pt on input line 13.
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 13.
- [1
+) [1
 Non-PDF special ignored!
 <special> header=pstricks.pro
 Non-PDF special ignored!
@@ -604,35 +528,22 @@ Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
 Non-PDF special ignored!
 <special> header="C:/Users/charf/Documents/GitHub/Dauntless"/Postscript/dup...
-
-] [2] (sign-PRINT.aux)
-\openout1 = `sign-PRINT.aux'.
-
- [1
-
-] [2] (sign-PRINT.aux)
-\openout1 = `sign-PRINT.aux'.
-
- [1
-
-] [2] (sign-PRINT.aux) ) 
+] (debeersamerica.aux) ) 
 Here is how much of TeX's memory you used:
- 12663 strings out of 492895
- 190163 string characters out of 3123735
- 315619 words of memory out of 3000000
- 16364 multiletter control sequences out of 15000+200000
- 24904 words of font info for 50 fonts, out of 3000000 for 9000
+ 12493 strings out of 492895
+ 187833 string characters out of 3123735
+ 306357 words of memory out of 3000000
+ 16221 multiletter control sequences out of 15000+200000
+ 9100 words of font info for 21 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,13n,45p,785b,499s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 50i,11n,45p,790b,392s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/charf/AppData/Local/Programs/MiKTeX 2.9/fonts
 /enc/dvips/base/8r.enc}<C:/Users/charf/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/urw/helvetic/uhvb8a.pfb><C:/Users/charf/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/charf/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/charf/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sign-PRINT.pdf (6 pages, 44755 bytes).
+type1/urw/times/utmr8a.pfb><C:/Users/charf/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/urw/times/utmri8a.pfb>
+Output written on debeersamerica.pdf (1 page, 29951 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
+ 15 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
